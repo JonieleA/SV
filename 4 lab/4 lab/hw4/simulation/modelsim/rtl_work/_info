@@ -1,0 +1,168 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Project/Quartus Prime/hw4/simulation/modelsim
+vgen_overlapped
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1700475161
+!i10b 1
+!s100 ZLY43DU;IfbHid^AX1K6X2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IEWGAhM7BmZ9S26zZiYc3V2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1700173198
+8D:/Project/Quartus Prime/hw4/src/gen_overlapped.sv
+FD:/Project/Quartus Prime/hw4/src/gen_overlapped.sv
+!i122 3
+L0 1 22
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1700475161.000000
+!s107 D:/Project/Quartus Prime/hw4/src/gen_overlapped.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Project/Quartus Prime/hw4/src|D:/Project/Quartus Prime/hw4/src/gen_overlapped.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+D:/Project/Quartus Prime/hw4/src}
+Z9 tCvgOpt 0
+vLFSR_GAL
+R1
+R2
+!i10b 1
+!s100 fCh?6Bk`fm[b?Y9=TgESk0
+R3
+ILIhMI0UCm`T9z4h9]B:Kj2
+R4
+S1
+R0
+w1699617963
+8D:/Project/Quartus Prime/hw4/src/LFSR_GAL.sv
+FD:/Project/Quartus Prime/hw4/src/LFSR_GAL.sv
+!i122 0
+L0 1 25
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Project/Quartus Prime/hw4/src/LFSR_GAL.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Project/Quartus Prime/hw4/src|D:/Project/Quartus Prime/hw4/src/LFSR_GAL.sv|
+!i113 1
+R7
+R8
+R9
+n@l@f@s@r_@g@a@l
+vmealy_overlapped
+R1
+R2
+!i10b 1
+!s100 a<`O9EAi=oOzONGzFW=lA2
+R3
+IRLP?@JQz>KQ_5UMS58nKB0
+R4
+S1
+R0
+w1700475124
+8D:/Project/Quartus Prime/hw4/src/mealy_overlapped.sv
+FD:/Project/Quartus Prime/hw4/src/mealy_overlapped.sv
+!i122 2
+L0 1 40
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Project/Quartus Prime/hw4/src/mealy_overlapped.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Project/Quartus Prime/hw4/src|D:/Project/Quartus Prime/hw4/src/mealy_overlapped.sv|
+!i113 1
+R7
+R8
+R9
+vmoore_overlapped
+R1
+R2
+!i10b 1
+!s100 zL>DkU]H9NV571_X[:8Ql1
+R3
+IALAk7c=KcmBaNo8lSoDhj3
+R4
+S1
+R0
+w1700166963
+8D:/Project/Quartus Prime/hw4/src/moore_overlapped.sv
+FD:/Project/Quartus Prime/hw4/src/moore_overlapped.sv
+!i122 1
+L0 1 48
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Project/Quartus Prime/hw4/src/moore_overlapped.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Project/Quartus Prime/hw4/src|D:/Project/Quartus Prime/hw4/src/moore_overlapped.sv|
+!i113 1
+R7
+R8
+R9
+vtb_gen_overlapped
+R1
+Z10 !s110 1700475162
+!i10b 1
+!s100 fnTCgoD9OQgdP3fd>HJNf2
+R3
+I^Ing5C6Fn4iQVFjhA0dIQ0
+R4
+S1
+R0
+w1700175556
+8D:/Project/Quartus Prime/hw4/src/tb_gen_overlapped.sv
+FD:/Project/Quartus Prime/hw4/src/tb_gen_overlapped.sv
+!i122 5
+L0 1 42
+R5
+r1
+!s85 0
+31
+!s108 1700475162.000000
+!s107 D:/Project/Quartus Prime/hw4/src/tb_gen_overlapped.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Project/Quartus Prime/hw4/src|D:/Project/Quartus Prime/hw4/src/tb_gen_overlapped.sv|
+!i113 1
+R7
+R8
+R9
+vtop_gen_overlapped
+R1
+R10
+!i10b 1
+!s100 ?YS]>UfWd2aIDd?TBZ^`90
+R3
+IZ;X7PE70?:_kH8]Xf1Nn82
+R4
+S1
+R0
+w1700173187
+8D:/Project/Quartus Prime/hw4/src/top_gen_overlapped.sv
+FD:/Project/Quartus Prime/hw4/src/top_gen_overlapped.sv
+!i122 4
+L0 1 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Project/Quartus Prime/hw4/src/top_gen_overlapped.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Project/Quartus Prime/hw4/src|D:/Project/Quartus Prime/hw4/src/top_gen_overlapped.sv|
+!i113 1
+R7
+R8
+R9

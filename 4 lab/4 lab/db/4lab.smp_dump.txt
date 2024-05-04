@@ -1,0 +1,6 @@
+
+State Machine - |top|snail_mur:U1|state
+Name state.SAD state.HOORAY state.HOPE 
+state.SAD 0 0 0 
+state.HOPE 1 0 1 
+state.HOORAY 1 1 0 

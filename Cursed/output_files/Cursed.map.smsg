@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at Comands.sv(5): object "Delete" differs only in case from object "delete" in the same scope File: E:/Cursed/Comands.sv Line: 5
+Info (10281): Verilog HDL Declaration information at tb11.sv(5): object "ASCII" differs only in case from object "ascii" in the same scope File: E:/Cursed/output_files/tb11.sv Line: 5

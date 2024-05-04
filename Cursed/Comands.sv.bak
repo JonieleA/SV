@@ -1,0 +1,16 @@
+module Comands (Trig_1, Trig_2, Trig_3, Trig_4, right_from_gate, clk, priem, left_cursor, right_cursor, Delete, Enter);
+
+input logic [7:0] Trig_1, Trig_2, Trig_3, Trig_4;
+input logic right_from_gate, clk, priem;
+output logic left_cursor, right_cursor, Delete, Enter;
+
+logic s[2:0];
+logic delete;
+
+
+delay_par #(.delay(3)) U1 (.clk(clk), .priem(priem), .del(s[1]));
+delay_par #(.delay(4)) U2 (.clk(clk), .priem(priem), .del(s[0]));
+
+assign Enter = (s[1] & Trig_1 == 8'b00001101) ? 1 : 0;
+
+

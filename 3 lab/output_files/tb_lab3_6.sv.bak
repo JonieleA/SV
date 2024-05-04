@@ -1,0 +1,31 @@
+
+`timescale 1ns/1ns
+
+module tb_lab3_6;
+
+
+logic out, btn, clk;
+
+
+pwd DUT (.btn(btn), ._rst(_rst), .clk(clk), .out(out));
+
+initial begin
+clk = 0;
+btn = 0;
+_rst=0;
+#1 _rst=1;
+end
+always #1 clk = !clk;
+initial begin
+#100 btn=1;
+#1 btn = 0
+end
+initial
+#25000000 $stop;
+
+initial begin
+$display("Start");
+
+end
+
+endmodule

@@ -1,0 +1,54 @@
+# ERROR: No extended dataflow license exists
+# do 3_lab_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/k-105-15/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/k-105-15/3\ lab {/home/k-105-15/3 lab/lfsr_fib.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:05:25 on Nov 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-15/3 lab" /home/k-105-15/3 lab/lfsr_fib.sv 
+# -- Compiling module lfsr_fib
+# 
+# Top level modules:
+# 	lfsr_fib
+# End time: 16:05:25 on Nov 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+/home/k-105-15/3\ lab/output_files {/home/k-105-15/3 lab/output_files/tb_lab3_9.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:05:25 on Nov 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-15/3 lab/output_files" /home/k-105-15/3 lab/output_files/tb_lab3_9.sv 
+# -- Compiling module tb_lab3_9
+# 
+# Top level modules:
+# 	tb_lab3_9
+# End time: 16:05:25 on Nov 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_lab3_9
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_lab3_9 
+# Start time: 16:05:25 on Nov 08,2023
+# Loading sv_std.std
+# Loading work.tb_lab3_9
+# Loading work.lfsr_fib
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : /home/k-105-15/3 lab/output_files/tb_lab3_9.sv(29)
+#    Time: 19999 ps  Iteration: 1  Instance: /tb_lab3_9
+# Break in Module tb_lab3_9 at /home/k-105-15/3 lab/output_files/tb_lab3_9.sv line 29
+# 
+# stdin: <EOF>
+# End time: 16:27:28 on Nov 08,2023, Elapsed time: 0:22:03
+# Errors: 0, Warnings: 0

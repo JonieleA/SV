@@ -1,0 +1,46 @@
+module hw_lab3_bell3(btn1, btn2, _rst, clk, out)
+
+input logic btn1, btn2, clk, _rst;
+output logic out;
+logic n_clk, btn1_, btn2_;
+logic sclk[19:0];
+logic [19:0] D;
+logic en = 1'b1;
+
+detector U3(.btn(btn1), .out(btn1_), .clk(clk)); 
+detector U4(.btn(btn2), .out(btn2_), .clk(clk));
+
+
+
+reg20 U2 (.btn1(btn1_), .btn2(btn2_), ._rst(_rst), .Q(D));
+
+sch_par #(.schet(5)) schet5(.enable(en), .out(out), .clk(n_clk), ._rst(_rst));
+
+
+Del_par2 #(.Schet(5000)) del1KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[19]), .en(D[19]));
+Del_par2 #(.Schet(2500)) del2KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[18]), .en(D[18]));
+Del_par2 #(.Schet(1667) del3KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[17]), .en(D[17]));
+Del_par2 #(.Schet(1250)) del4KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[16]), .en(D[16]));
+Del_par2 #(.Schet(1000)) del5KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[15]), .en(D[15]));
+Del_par2 #(.Schet(833)) del6KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[14]), .en(D[14]));
+Del_par2 #(.Schet(714)) del7KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[13]), .en(D[13]));
+Del_par2 #(.Schet(625)) del8KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[12]), .en(D[12]));
+Del_par2 #(.Schet(556)) del9KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[11]), .en(D[11]));
+Del_par2 #(.Schet(500)) del10KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[10]), .en(D[10]));
+Del_par2 #(.Schet(455)) del11KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[9]), .en(D[9]));
+Del_par2 #(.Schet(417)) del12KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[8]), .en(D[8]));
+Del_par2 #(.Schet(385)) del13KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[7]), .en(D[7]));
+Del_par2 #(.Schet(357)) del14KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[6]), .en(D[6]));
+Del_par2 #(.Schet(333)) del15KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[5]), .en(D[5]));
+Del_par2 #(.Schet(313)) del163KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[4]), .en(D[4]));
+Del_par2 #(.Schet(294)) del17KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[3]), .en(D[3]));
+Del_par2 #(.Schet(278)) del18KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[2]), .en(D[2]));
+Del_par2 #(.Schet(263)) del19KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[1]), .en(D[1]));
+Del_par2 #(.Schet(250)) del20KHz( .clk(clk), ._rst(_rst), .n_clk(sclk[0]), .en(D[0]));
+
+
+
+
+or(n_clk, sclk[19],sclk[18],sclk[17],sclk[16],sclk[15],sclk[14],sclk[13],sclk[12],sclk[11],sclk[10],sclk[9],sclk[8],sclk[7],sclk[6],sclk[5],sclk[4],sclk[3],sclk[2],sclk[1],sclk[0]);
+
+endmodule

@@ -1,0 +1,352 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Cursed/simulation/modelsim
+vascii_to_bcd
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1702407845
+!i10b 1
+!s100 El>Mz:WlLWoK:JU<XdK^41
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ICj0PKkfKb;oPaPDGILQk:2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1702069087
+8E:/Cursed/ascii_to_bcd.sv
+FE:/Cursed/ascii_to_bcd.sv
+!i122 10
+L0 1 8
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1702407844.000000
+!s107 E:/Cursed/ascii_to_bcd.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/ascii_to_bcd.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+E:/Cursed
+Z9 tCvgOpt 0
+vComands
+R1
+Z10 !s110 1702407844
+!i10b 1
+!s100 <6LEZdJ:72g8NIAVWBN0[3
+R3
+Ie:QiVE>=]7>J16U9ShRe50
+R4
+S1
+R0
+w1701975080
+8E:/Cursed/Comands.sv
+FE:/Cursed/Comands.sv
+!i122 4
+L0 1 20
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Cursed/Comands.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/Comands.sv|
+!i113 1
+R7
+R8
+R9
+n@comands
+vCont_seq
+R1
+R10
+!i10b 1
+!s100 8[OJD<[zQ9@5Hoe;5J?Tb0
+R3
+I8boEiCSZKE_]HecYNS0g;0
+R4
+S1
+R0
+w1701978940
+8E:/Cursed/Cont_seq.sv
+FE:/Cursed/Cont_seq.sv
+!i122 3
+L0 1 38
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Cursed/Cont_seq.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/Cont_seq.sv|
+!i113 1
+R7
+R8
+R9
+n@cont_seq
+vdelay_par
+R1
+!s110 1702407843
+!i10b 1
+!s100 F`;;UB>?ZQOi3if0nWjfc0
+R3
+IG>?mA8E7TZE6YGkNJPVnU3
+R4
+S1
+R0
+w1701980213
+8E:/Cursed/delay_par.sv
+FE:/Cursed/delay_par.sv
+!i122 0
+L0 1 17
+R5
+r1
+!s85 0
+31
+Z11 !s108 1702407843.000000
+!s107 E:/Cursed/delay_par.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/delay_par.sv|
+!i113 1
+R7
+R8
+R9
+vDisplay
+R1
+R10
+!i10b 1
+!s100 NEX7g0?gPn[8z_X>E_53g2
+R3
+IB:On_Ajh0UP3BlY=kho010
+R4
+S1
+R0
+w1702228045
+8E:/Cursed/Display.sv
+FE:/Cursed/Display.sv
+!i122 9
+L0 1 26
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Cursed/Display.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/Display.sv|
+!i113 1
+R7
+R8
+R9
+n@display
+vgate
+R1
+R10
+!i10b 1
+!s100 ]BX:D=FiH0@GBCOP3anZR0
+R3
+IWIi72bF]XBF]SY61UFM>a0
+R4
+S1
+R0
+w1702222239
+8E:/Cursed/gate.sv
+FE:/Cursed/gate.sv
+!i122 1
+L0 1 29
+R5
+r1
+!s85 0
+31
+R11
+!s107 E:/Cursed/gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/gate.sv|
+!i113 1
+R7
+R8
+R9
+vgenerator
+R1
+R10
+!i10b 1
+!s100 8_^OgkZ`jgU6EBBOWLPIe2
+R3
+IYAElH9fJYW4l[64BOCnd@1
+R4
+S1
+R0
+w1701980495
+8E:/Cursed/generator.sv
+FE:/Cursed/generator.sv
+!i122 7
+L0 1 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Cursed/generator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/generator.sv|
+!i113 1
+R7
+R8
+R9
+vmain
+R1
+R2
+!i10b 1
+!s100 2=bG`]ebQG@997fTcm5T70
+R3
+IT_`[4;B;k_IhHSJ`_kH1f2
+R4
+S1
+R0
+w1702069539
+8E:/Cursed/main.sv
+FE:/Cursed/main.sv
+!i122 11
+L0 1 27
+R5
+r1
+!s85 0
+31
+Z12 !s108 1702407845.000000
+!s107 E:/Cursed/main.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/main.sv|
+!i113 1
+R7
+R8
+R9
+vobrabotka
+R1
+R10
+!i10b 1
+!s100 E20DRA@OhZfnW?6KnYMV82
+R3
+IM@m[Q1C;aV5Xn;k`WB]na2
+R4
+S1
+R0
+w1702224532
+8E:/Cursed/obrabotka.sv
+FE:/Cursed/obrabotka.sv
+!i122 6
+L0 1 37
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Cursed/obrabotka.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/obrabotka.sv|
+!i113 1
+R7
+R8
+R9
+vregist
+R1
+R10
+!i10b 1
+!s100 zK[1kdR<TjE3D7W`<Hh`<2
+R3
+IcJa8eg2YJa_Kz4P6QPzcJ0
+R4
+S1
+R0
+w1701981603
+8E:/Cursed/regist.sv
+FE:/Cursed/regist.sv
+!i122 8
+Z13 L0 1 22
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Cursed/regist.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/regist.sv|
+!i113 1
+R7
+R8
+R9
+vregister
+R1
+R10
+!i10b 1
+!s100 Hn2Fd>4nYe1C5c3Po3]<^1
+R3
+I]HL6mKOgVEDCDeL2Uomn@3
+R4
+S1
+R0
+w1701975091
+8E:/Cursed/register.sv
+FE:/Cursed/register.sv
+!i122 5
+L0 1 12
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Cursed/register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/register.sv|
+!i113 1
+R7
+R8
+R9
+vtb12
+R1
+R2
+!i10b 1
+!s100 QTOVZMf?GLLQ_][Vl8^=W0
+R3
+IQ5TKg9UAbOHj@0z;F7R_Z2
+R4
+S1
+R0
+w1702229422
+8E:/Cursed/output_files/tb12.sv
+FE:/Cursed/output_files/tb12.sv
+!i122 12
+L0 3 47
+R5
+r1
+!s85 0
+31
+R12
+!s107 E:/Cursed/output_files/tb12.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed/output_files|E:/Cursed/output_files/tb12.sv|
+!i113 1
+R7
+!s92 -sv -work work +incdir+E:/Cursed/output_files
+R9
+vto_save
+R1
+R10
+!i10b 1
+!s100 TQn]cEgRM_Cb7@1]d6Ugj1
+R3
+Im9A5lAXEII9nS?V_Q7FdP3
+R4
+S1
+R0
+w1702223453
+8E:/Cursed/to_save.sv
+FE:/Cursed/to_save.sv
+!i122 2
+R13
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Cursed/to_save.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Cursed|E:/Cursed/to_save.sv|
+!i113 1
+R7
+R8
+R9

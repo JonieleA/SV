@@ -1,0 +1,115 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/4 lab/simulation/modelsim
+vlab4_tb
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1699784515
+!i10b 1
+!s100 RUi2AFHL3TJWQ_W>R1cZz3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IfD?b;<1WDK6=j7D>DKfbD3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1699742953
+8E:/4 lab/output_files/lab4_tb.sv
+FE:/4 lab/output_files/lab4_tb.sv
+!i122 3
+L0 4 42
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1699784515.000000
+!s107 E:/4 lab/output_files/lab4_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/4 lab/output_files|E:/4 lab/output_files/lab4_tb.sv|
+!i113 1
+Z7 o-sv -work work
+!s92 -sv -work work {+incdir+E:/4 lab/output_files}
+Z8 tCvgOpt 0
+vsnail_mealey
+R1
+R2
+!i10b 1
+!s100 oWV[KigJ51nmFP4L1;`n72
+R3
+I`XhP?o]cloZ?B^dbSS1b@3
+R4
+S1
+R0
+w1699784442
+8E:/4 lab/snail_mealey.sv
+FE:/4 lab/snail_mealey.sv
+!i122 1
+L0 1 35
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/4 lab/snail_mealey.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/4 lab|E:/4 lab/snail_mealey.sv|
+!i113 1
+R7
+Z9 !s92 -sv -work work {+incdir+E:/4 lab}
+R8
+vsnail_mur
+R1
+R2
+!i10b 1
+!s100 ><I3Rf5Z1@I:CJX5Xn8IQ3
+R3
+I7lB9JQYe8IbKz^<``[F3f3
+R4
+S1
+R0
+w1699733965
+8E:/4 lab/snail_mur.sv
+FE:/4 lab/snail_mur.sv
+!i122 0
+L0 1 28
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/4 lab/snail_mur.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/4 lab|E:/4 lab/snail_mur.sv|
+!i113 1
+R7
+R9
+R8
+vtop
+R1
+R2
+!i10b 1
+!s100 2dgN4n:Ann=8CB`F1zZ821
+R3
+I;b<cd=zdPSkFBJjX2S`iH0
+R4
+S1
+R0
+w1699742856
+8E:/4 lab/top.sv
+FE:/4 lab/top.sv
+!i122 2
+L0 1 10
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/4 lab/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/4 lab|E:/4 lab/top.sv|
+!i113 1
+R7
+R9
+R8

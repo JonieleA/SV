@@ -1,0 +1,9 @@
+module top_neperek (clk, nres, D, F0, F1);
+
+input logic clk, nres, D;
+output logic F0, F1;
+
+moore_neperek U1 (.clk(), .nres, .INP, .OUTP);
+mealy_neperek U2 (.clk(), .nres, .INP, .OUTP);
+
+endmodule

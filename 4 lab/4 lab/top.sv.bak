@@ -1,0 +1,9 @@
+module top(D, clk, _rst, Q_mur, Q_mealey);
+
+input logic D, clk, _rst;
+output logic Q_mur, Q_mealey;
+
+snail_mur(.D(D), .clk(clk), ._rst(rst), .Q(Q_mur));
+snail_mealey(.D(D), .clk(clk), ._rst(rst), .Q(Q_mealey));
+
+endmodule

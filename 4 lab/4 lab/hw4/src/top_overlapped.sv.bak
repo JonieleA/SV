@@ -1,0 +1,8 @@
+module top_overlapped (clk, res_n, D, F);
+
+input logic clk, res_n, D;
+output logic 				F;
+
+moore_overlapped U1 (clk, res_n, D, F);
+
+endmodule

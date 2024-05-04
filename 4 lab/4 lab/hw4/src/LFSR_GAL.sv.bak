@@ -1,0 +1,18 @@
+module LFSR_GAL (clk, res_n, DATA);
+
+input logic clk, res_n;
+output logic 		DATA;
+
+logic [0:15]  LFSR_reg;
+
+always_ff @(posedge clk or negedge res_n) begin
+	if (!res_n)
+		LFSR_reg <= 16'hA2C1;
+	else
+		LFSR_reg <= {LFSR_reg[15] ^ LFSR_reg[8] ^ LFSR_reg[4], LFSR_reg[0:14]};
+	
+end
+
+assign DATA = LFSR_reg[15];
+
+endmodule

@@ -1,0 +1,219 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/k-105-03/workspace/29nov/HW_2_3_lab4/simulation/modelsim
+vmealy_neperek
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1701255302
+!i10b 1
+!s100 J`:2X0d[e8bchZj9mG9CW2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IEX:I0Q^QOK<LecPLMil_@3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1700692806
+8/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/mealy_neperek.sv
+F/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/mealy_neperek.sv
+!i122 2
+Z5 L0 1 39
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1701255302.000000
+!s107 /home/k-105-03/workspace/29nov/HW_2_3_lab4/src/mealy_neperek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/HW_2_3_lab4/src|/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/mealy_neperek.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+/home/k-105-03/workspace/29nov/HW_2_3_lab4/src
+Z10 tCvgOpt 0
+vmealy_perek
+R1
+R2
+!i10b 1
+!s100 OeOFY0canb<k_K2Nol4@_0
+R3
+IPb_gW:C6=Ue37:5W07_G@0
+R4
+S1
+R0
+w1700693314
+8/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/mealy_perek.sv
+F/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/mealy_perek.sv
+!i122 3
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/HW_2_3_lab4/src/mealy_perek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/HW_2_3_lab4/src|/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/mealy_perek.sv|
+!i113 1
+R8
+R9
+R10
+vmoore_neperek
+R1
+R2
+!i10b 1
+!s100 YZ_G5R8R:YmDfbBROPYiI2
+R3
+InAY?SmSkQT?BT_m;7;U_B2
+R4
+S1
+R0
+w1700692446
+8/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/moore_neperek.sv
+F/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/moore_neperek.sv
+!i122 0
+L0 1 32
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/HW_2_3_lab4/src/moore_neperek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/HW_2_3_lab4/src|/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/moore_neperek.sv|
+!i113 1
+R8
+R9
+R10
+vmoore_perek
+R1
+R2
+!i10b 1
+!s100 bFCS:B`fCGL[;g^Ioe`jG1
+R3
+I6IQdoil^bSn=6EUjb1^7>2
+R4
+S1
+R0
+w1700693170
+8/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/moore_perek.sv
+F/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/moore_perek.sv
+!i122 1
+L0 1 33
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/HW_2_3_lab4/src/moore_perek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/HW_2_3_lab4/src|/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/moore_perek.sv|
+!i113 1
+R8
+R9
+R10
+vtb_entire
+R1
+R2
+!i10b 1
+!s100 iLJ4jMfl22n]>4LNFcG=S3
+R3
+I1@GB9X9Wh^E^1aeCf;jlQ1
+R4
+S1
+R0
+w1700695400
+8/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/tb_entire.sv
+F/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/tb_entire.sv
+!i122 7
+L0 3 63
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/HW_2_3_lab4/src/tb_entire.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/HW_2_3_lab4/src|/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/tb_entire.sv|
+!i113 1
+R8
+R9
+R10
+vtop_entire
+R1
+R2
+!i10b 1
+!s100 KChY3iWf:O`j@FX?T5S?j3
+R3
+I>[MkA<aDW8JEYTV9RXZU]0
+R4
+S1
+R0
+w1700694622
+8/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_entire.sv
+F/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_entire.sv
+!i122 6
+L0 1 10
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_entire.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/HW_2_3_lab4/src|/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_entire.sv|
+!i113 1
+R8
+R9
+R10
+vtop_neperek
+R1
+R2
+!i10b 1
+!s100 f?JRlcmCCJaTNH]Z1C=9z0
+R3
+I9bDA3_^5Ze1dXVdn]lEla2
+R4
+S1
+R0
+w1700692966
+8/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_neperek.sv
+F/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_neperek.sv
+!i122 4
+Z11 L0 1 9
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_neperek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/HW_2_3_lab4/src|/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_neperek.sv|
+!i113 1
+R8
+R9
+R10
+vtop_perek
+R1
+R2
+!i10b 1
+!s100 TnQNgPmJEV5VzahBnF6H61
+R3
+I;4e=@6oJa_mnH=DTC>iI12
+R4
+S1
+R0
+w1700693050
+8/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_perek.sv
+F/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_perek.sv
+!i122 5
+R11
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_perek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/HW_2_3_lab4/src|/home/k-105-03/workspace/29nov/HW_2_3_lab4/src/top_perek.sv|
+!i113 1
+R8
+R9
+R10

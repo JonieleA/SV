@@ -1,0 +1,22 @@
+module gate (clk, sig, inp, Priem, res, right_cursor);
+
+input logic clk, sig, priem;
+input logic [7:0] inp;
+output logic [7:0] res;
+output logic right_cursor;
+
+logic w;
+logic [3:0] s;
+
+and(w, clk, sig);
+
+assign res = inp & w;
+
+U1 delay_par #(delay(3)) (.clk(clk), .priem(priem), .del(s[2]));
+U2 delay_par #(delay(4)) (.clk(clk), .priem(priem), .del(s[1]));
+
+not(s[3], s[1]);
+and(right_cursor, s[2], s[3], sig);
+
+endmodule
+

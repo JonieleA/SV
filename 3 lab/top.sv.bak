@@ -1,0 +1,12 @@
+module top (clk, _rst, n_clk);
+
+input logic clk, _rst;
+logic [3:0] Q;
+logic n_clk;
+logic last_clk;
+
+schet10 U1(.clk(clk), ._rst(_rst), .n_clk(n_clk));
+schet10 U2(.clk(n_clk), ._rst(_rst), .n_clk(last_clk));
+
+endmodule;
+

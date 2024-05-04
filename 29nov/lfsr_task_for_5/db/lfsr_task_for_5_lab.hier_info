@@ -1,0 +1,121 @@
+|top_lfsr_5
+clkTop => clkTop.IN3
+nrstTop => nrstTop.IN3
+MUX_out << mux_2to1:dut_mux.Y
+
+
+|top_lfsr_5|lfsr_fibonacci_param:dut_fib_1
+clk => lfsr_reg[15].CLK
+clk => lfsr_reg[14].CLK
+clk => lfsr_reg[13].CLK
+clk => lfsr_reg[12].CLK
+clk => lfsr_reg[11].CLK
+clk => lfsr_reg[10].CLK
+clk => lfsr_reg[9].CLK
+clk => lfsr_reg[8].CLK
+clk => lfsr_reg[7].CLK
+clk => lfsr_reg[6].CLK
+clk => lfsr_reg[5].CLK
+clk => lfsr_reg[4].CLK
+clk => lfsr_reg[3].CLK
+clk => lfsr_reg[2].CLK
+clk => lfsr_reg[1].CLK
+clk => lfsr_reg[0].CLK
+nrst => lfsr_reg[15].PRESET
+nrst => lfsr_reg[14].ACLR
+nrst => lfsr_reg[13].ACLR
+nrst => lfsr_reg[12].ACLR
+nrst => lfsr_reg[11].ACLR
+nrst => lfsr_reg[10].ACLR
+nrst => lfsr_reg[9].PRESET
+nrst => lfsr_reg[8].PRESET
+nrst => lfsr_reg[7].PRESET
+nrst => lfsr_reg[6].ACLR
+nrst => lfsr_reg[5].ACLR
+nrst => lfsr_reg[4].ACLR
+nrst => lfsr_reg[3].ACLR
+nrst => lfsr_reg[2].PRESET
+nrst => lfsr_reg[1].ACLR
+nrst => lfsr_reg[0].PRESET
+lfsr_out <= lfsr_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_lfsr_5|lfsr_fibonacci_param:dut_fib_2
+clk => lfsr_reg[15].CLK
+clk => lfsr_reg[14].CLK
+clk => lfsr_reg[13].CLK
+clk => lfsr_reg[12].CLK
+clk => lfsr_reg[11].CLK
+clk => lfsr_reg[10].CLK
+clk => lfsr_reg[9].CLK
+clk => lfsr_reg[8].CLK
+clk => lfsr_reg[7].CLK
+clk => lfsr_reg[6].CLK
+clk => lfsr_reg[5].CLK
+clk => lfsr_reg[4].CLK
+clk => lfsr_reg[3].CLK
+clk => lfsr_reg[2].CLK
+clk => lfsr_reg[1].CLK
+clk => lfsr_reg[0].CLK
+nrst => lfsr_reg[15].ACLR
+nrst => lfsr_reg[14].PRESET
+nrst => lfsr_reg[13].ACLR
+nrst => lfsr_reg[12].ACLR
+nrst => lfsr_reg[11].ACLR
+nrst => lfsr_reg[10].ACLR
+nrst => lfsr_reg[9].PRESET
+nrst => lfsr_reg[8].PRESET
+nrst => lfsr_reg[7].ACLR
+nrst => lfsr_reg[6].PRESET
+nrst => lfsr_reg[5].ACLR
+nrst => lfsr_reg[4].ACLR
+nrst => lfsr_reg[3].ACLR
+nrst => lfsr_reg[2].PRESET
+nrst => lfsr_reg[1].ACLR
+nrst => lfsr_reg[0].PRESET
+lfsr_out <= lfsr_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_lfsr_5|lfsr_fibonacci_param:dut_fib_3
+clk => lfsr_reg[15].CLK
+clk => lfsr_reg[14].CLK
+clk => lfsr_reg[13].CLK
+clk => lfsr_reg[12].CLK
+clk => lfsr_reg[11].CLK
+clk => lfsr_reg[10].CLK
+clk => lfsr_reg[9].CLK
+clk => lfsr_reg[8].CLK
+clk => lfsr_reg[7].CLK
+clk => lfsr_reg[6].CLK
+clk => lfsr_reg[5].CLK
+clk => lfsr_reg[4].CLK
+clk => lfsr_reg[3].CLK
+clk => lfsr_reg[2].CLK
+clk => lfsr_reg[1].CLK
+clk => lfsr_reg[0].CLK
+nrst => lfsr_reg[15].ACLR
+nrst => lfsr_reg[14].PRESET
+nrst => lfsr_reg[13].ACLR
+nrst => lfsr_reg[12].ACLR
+nrst => lfsr_reg[11].ACLR
+nrst => lfsr_reg[10].ACLR
+nrst => lfsr_reg[9].PRESET
+nrst => lfsr_reg[8].PRESET
+nrst => lfsr_reg[7].PRESET
+nrst => lfsr_reg[6].ACLR
+nrst => lfsr_reg[5].ACLR
+nrst => lfsr_reg[4].ACLR
+nrst => lfsr_reg[3].ACLR
+nrst => lfsr_reg[2].PRESET
+nrst => lfsr_reg[1].ACLR
+nrst => lfsr_reg[0].PRESET
+lfsr_out <= lfsr_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_lfsr_5|mux_2to1:dut_mux
+D0 => Y.DATAB
+D1 => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

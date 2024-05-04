@@ -1,0 +1,89 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/3 lab/simulation/modelsim
+vhard_block
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1699211369
+!i10b 1
+!s100 ^nU1KOJmBo2cLg=d03m2]0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IlTa=j`J>NHKPVfWedmFV61
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1698867401
+Z6 83_lab.svo
+Z7 F3_lab.svo
+!i122 0
+L0 7015 34
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1699211369.000000
+Z10 !s107 3_lab.svo|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+.|3_lab.svo|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+.
+Z14 tCvgOpt 0
+vpwd
+R1
+R2
+!i10b 1
+!s100 W]eSb5MhFaC`hme9^=eWb0
+R3
+I=UK>C3gB^NBg]h`1mackD0
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 32 6982
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vtb_lab3_8
+R1
+!s110 1699211370
+!i10b 1
+!s100 =Z3S0?PLOD9<RZo9X;L9X0
+R3
+INhYAimFzXbhW=>0[gLELU3
+R4
+S1
+R0
+w1699211356
+8E:/3 lab/output_files/tb_lab3_8.sv
+FE:/3 lab/output_files/tb_lab3_8.sv
+!i122 1
+L0 4 40
+R8
+r1
+!s85 0
+31
+!s108 1699211370.000000
+!s107 E:/3 lab/output_files/tb_lab3_8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/3 lab/output_files|E:/3 lab/output_files/tb_lab3_8.sv|
+!i113 1
+R12
+!s92 -sv -work work {+incdir+E:/3 lab/output_files}
+R14

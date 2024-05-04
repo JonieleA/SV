@@ -1,0 +1,298 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/k-105-03/workspace/29nov/only_hw_3/simulation/modelsim
+vgen_neperek
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1701255707
+!i10b 1
+!s100 BSMI@JS=g[S6Id7dM0`kX1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IIlgSGc4oJCn<VYDXll`NJ0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1700779020
+8/home/k-105-03/workspace/29nov/only_hw_3/src/gen_neperek.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/gen_neperek.sv
+!i122 3
+Z5 L0 1 12
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1701255707.000000
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/gen_neperek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/gen_neperek.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src
+Z10 tCvgOpt 0
+vgen_perek
+R1
+R2
+!i10b 1
+!s100 GVJ_boK[X;[JgBBXfPI9;2
+R3
+IAW9Qa>0W[zD8cokFe3zoP1
+R4
+S1
+R0
+w1700778734
+8/home/k-105-03/workspace/29nov/only_hw_3/src/gen_perek.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/gen_perek.sv
+!i122 4
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/gen_perek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/gen_perek.sv|
+!i113 1
+R8
+R9
+R10
+vHighestGenTop
+R1
+R2
+!i10b 1
+!s100 Z9FfAbE3DTeYb4>FP:AdP2
+R3
+IPP?o3KcAICbQYY<eFo5n@2
+R4
+S1
+R0
+w1700778920
+8/home/k-105-03/workspace/29nov/only_hw_3/src/HighestGenTop.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/HighestGenTop.sv
+!i122 9
+L0 1 9
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/HighestGenTop.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/HighestGenTop.sv|
+!i113 1
+R8
+R9
+R10
+n@highest@gen@top
+vlfsr_fibonacci_param
+R1
+R2
+!i10b 1
+!s100 3]hzcfj7F5zi>?DI9CS[V0
+R3
+Ie9hfY0zR3DK<@KRi=lVcA1
+R4
+S1
+R0
+w1700742950
+8/home/k-105-03/workspace/29nov/only_hw_3/src/lfsr_fibonacci_param.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/lfsr_fibonacci_param.sv
+!i122 0
+L0 1 22
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/lfsr_fibonacci_param.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/lfsr_fibonacci_param.sv|
+!i113 1
+R8
+R9
+R10
+vmealy_neperek
+R1
+R2
+!i10b 1
+!s100 J`:2X0d[e8bchZj9mG9CW2
+R3
+IFHaZ2b[=:PiT[7zNR7lc62
+R4
+S1
+R0
+w1700743198
+8/home/k-105-03/workspace/29nov/only_hw_3/src/mealy_neperek.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/mealy_neperek.sv
+!i122 6
+Z11 L0 1 39
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/mealy_neperek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/mealy_neperek.sv|
+!i113 1
+R8
+R9
+R10
+vmealy_perek
+R1
+R2
+!i10b 1
+!s100 OeOFY0canb<k_K2Nol4@_0
+R3
+IR?W9M]LEAQTgCaY?oz5zm3
+R4
+S1
+R0
+w1700743190
+8/home/k-105-03/workspace/29nov/only_hw_3/src/mealy_perek.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/mealy_perek.sv
+!i122 5
+R11
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/mealy_perek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/mealy_perek.sv|
+!i113 1
+R8
+R9
+R10
+vmoore_neperek
+R1
+R2
+!i10b 1
+!s100 YZ_G5R8R:YmDfbBROPYiI2
+R3
+IUEE2IVnj_fYhFHk=AQVlk1
+R4
+S1
+R0
+w1700743208
+8/home/k-105-03/workspace/29nov/only_hw_3/src/moore_neperek.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/moore_neperek.sv
+!i122 7
+L0 1 32
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/moore_neperek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/moore_neperek.sv|
+!i113 1
+R8
+R9
+R10
+vmoore_perek
+R1
+R2
+!i10b 1
+!s100 bFCS:B`fCGL[;g^Ioe`jG1
+R3
+I4:[Mai=RggPTn^3kjWgVI3
+R4
+S1
+R0
+w1700743226
+8/home/k-105-03/workspace/29nov/only_hw_3/src/moore_perek.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/moore_perek.sv
+!i122 8
+L0 1 33
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/moore_perek.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/moore_perek.sv|
+!i113 1
+R8
+R9
+R10
+vmux_2to1
+R1
+R2
+!i10b 1
+!s100 D2gmdnLnPZo0XTdOX36Wj1
+R3
+IG1`1VVm8MEZdfQNO7oo<C1
+R4
+S1
+R0
+w1700742960
+8/home/k-105-03/workspace/29nov/only_hw_3/src/mux_2to1.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/mux_2to1.sv
+!i122 1
+L0 1 13
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/mux_2to1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/mux_2to1.sv|
+!i113 1
+R8
+R9
+R10
+vtb_highest_top
+R1
+R2
+!i10b 1
+!s100 :k^TM39I0jjbRN6Hj]U[f1
+R3
+I1aLXU15;kzKUgJMJU0n1<1
+R4
+S1
+R0
+w1701253639
+8/home/k-105-03/workspace/29nov/only_hw_3/src/tb_highest_top.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/tb_highest_top.sv
+!i122 10
+L0 3 50
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/tb_highest_top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/tb_highest_top.sv|
+!i113 1
+R8
+R9
+R10
+vtop_lfsr_5
+R1
+R2
+!i10b 1
+!s100 2C>h[YEYecShc1FPWeFYL1
+R3
+IUbllPT:P3d7mz]8HFOA703
+R4
+S1
+R0
+w1700742974
+8/home/k-105-03/workspace/29nov/only_hw_3/src/top_lfsr_5.sv
+F/home/k-105-03/workspace/29nov/only_hw_3/src/top_lfsr_5.sv
+!i122 2
+L0 1 14
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/k-105-03/workspace/29nov/only_hw_3/src/top_lfsr_5.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src|/home/k-105-03/workspace/29nov/only_hw_3/src/top_lfsr_5.sv|
+!i113 1
+R8
+R9
+R10

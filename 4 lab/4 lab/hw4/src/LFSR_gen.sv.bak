@@ -1,0 +1,6 @@
+module (clk, res_n, F);
+
+input logic clk, res_n;
+output logic F;
+
+endmodule

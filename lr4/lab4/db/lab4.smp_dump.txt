@@ -1,0 +1,12 @@
+
+State Machine - |top_state|moore:U2|state
+Name state.OFF state.ON state.READY 
+state.OFF 0 0 0 
+state.READY 1 0 1 
+state.ON 1 1 0 
+
+State Machine - |top_state|mealy:U1|state
+Name state.OFF state.ON state.READY 
+state.OFF 0 0 0 
+state.READY 1 0 1 
+state.ON 1 1 0 

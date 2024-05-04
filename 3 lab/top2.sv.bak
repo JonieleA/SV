@@ -1,0 +1,12 @@
+module top2 (clk, _rst, last_clk, Q);
+
+input logic clk, _rst;
+output logic [7:0] Q;
+logic n_clk;
+output logic last_clk;
+
+schet10 #(.Schet(10)) Schet10 (.clk(clk), ._rst(_rst), .n_clk(n_clk), .Q(Q[3:0]));
+schet10 #(.Schet(10)) Schet6 (.clk(n_clk), ._rst(_rst), .n_clk(last_clk), .Q(Q[7:4]));
+
+endmodule
+

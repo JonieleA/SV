@@ -1,0 +1,13 @@
+module detect_front (btn, out);
+
+input logic btn;
+logic [32:0] Q;
+output logic out;
+
+always_ff @(posedge btn or negedge btn) begin
+	if (!btn) begin Q<= 0; out <= 0; end
+	else if (Q != 32'd100000) begin Q <= Q+1;  out <= 0 end;
+	else if (Q == 32'd100000) begin  out=1; Q <= 0; end
+end
+
+endmodule

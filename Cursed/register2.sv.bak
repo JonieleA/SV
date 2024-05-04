@@ -1,0 +1,12 @@
+module register2 (enable, Q, D, clk, rst);
+
+input logic enable, clk, rst;
+input logic [7:0] D;
+output logic [7:0] Q;
+
+always_ff @(posedge rst, posedge clk, posedge enable)
+	if (rst) Q <= 0;
+	else if (clk & enable) Q <= D;
+	else Q <= Q;
+	
+endmodule

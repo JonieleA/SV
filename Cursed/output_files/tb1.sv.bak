@@ -1,0 +1,27 @@
+`timescale 1ns/1ns
+
+
+module tb1;
+
+logic clk, priem, s;
+
+
+top DUT(.D(D), .clk(clk), ._rst(_rst), .Q_mur(Q_mur), .Q_mealey(Q_mealey), .state(state), .nextstate(nextstate));
+
+delay_par #(.delay(1)) U1 (.clk(clk), .priem(priem), .del(s));
+
+
+initial begin
+clk = 0;
+priem =0;
+#20 priem = 1;
+#20 priem = 0;
+#20 priem = 1;
+end
+
+always #1 clk = !clk;
+
+initial #100 $stop;
+
+
+endmodule

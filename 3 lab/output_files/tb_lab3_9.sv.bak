@@ -1,0 +1,21 @@
+module tb_lab3_9;
+
+//объявить переменную, хранящую дескриптор файла и открыть файл в  режиме записи
+int fd;
+initial begin
+  $fopen(fd, "Sequence.txt", "w");
+end
+
+//каждый фронт тактового синхросигнала записывать в файл  выходной сигнал с именем outPRS в бинарном формате
+always @(posedge clk) begin
+  $fdisplay(fg, "%b", outPRS);
+end
+
+//по достижению 10000 тактов моделирования закрыть файл и остановить моделирование
+initial begin
+  repeat(10000) @(posedge clk);
+  $fclose(fg);
+  $stop;
+end
+
+endmodule

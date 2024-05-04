@@ -1,0 +1,140 @@
+|song_top
+clk_50MHz => clk_50MHz.IN6
+play => x.DATAIN
+speaker <= speaker.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|song_top|a_440Hz:t_a
+clk_50MHz => r_440Hz.CLK
+clk_50MHz => r_counter[0].CLK
+clk_50MHz => r_counter[1].CLK
+clk_50MHz => r_counter[2].CLK
+clk_50MHz => r_counter[3].CLK
+clk_50MHz => r_counter[4].CLK
+clk_50MHz => r_counter[5].CLK
+clk_50MHz => r_counter[6].CLK
+clk_50MHz => r_counter[7].CLK
+clk_50MHz => r_counter[8].CLK
+clk_50MHz => r_counter[9].CLK
+clk_50MHz => r_counter[10].CLK
+clk_50MHz => r_counter[11].CLK
+clk_50MHz => r_counter[12].CLK
+clk_50MHz => r_counter[13].CLK
+clk_50MHz => r_counter[14].CLK
+clk_50MHz => r_counter[15].CLK
+clk_50MHz => r_counter[16].CLK
+out <= r_440Hz.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|song_top|cH_523Hz:t_cH
+clk_50MHz => r_523Hz.CLK
+clk_50MHz => r_counter[0].CLK
+clk_50MHz => r_counter[1].CLK
+clk_50MHz => r_counter[2].CLK
+clk_50MHz => r_counter[3].CLK
+clk_50MHz => r_counter[4].CLK
+clk_50MHz => r_counter[5].CLK
+clk_50MHz => r_counter[6].CLK
+clk_50MHz => r_counter[7].CLK
+clk_50MHz => r_counter[8].CLK
+clk_50MHz => r_counter[9].CLK
+clk_50MHz => r_counter[10].CLK
+clk_50MHz => r_counter[11].CLK
+clk_50MHz => r_counter[12].CLK
+clk_50MHz => r_counter[13].CLK
+clk_50MHz => r_counter[14].CLK
+clk_50MHz => r_counter[15].CLK
+clk_50MHz => r_counter[16].CLK
+out <= r_523Hz.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|song_top|eH_659Hz:t_eH
+clk_50MHz => r_659Hz.CLK
+clk_50MHz => r_counter[0].CLK
+clk_50MHz => r_counter[1].CLK
+clk_50MHz => r_counter[2].CLK
+clk_50MHz => r_counter[3].CLK
+clk_50MHz => r_counter[4].CLK
+clk_50MHz => r_counter[5].CLK
+clk_50MHz => r_counter[6].CLK
+clk_50MHz => r_counter[7].CLK
+clk_50MHz => r_counter[8].CLK
+clk_50MHz => r_counter[9].CLK
+clk_50MHz => r_counter[10].CLK
+clk_50MHz => r_counter[11].CLK
+clk_50MHz => r_counter[12].CLK
+clk_50MHz => r_counter[13].CLK
+clk_50MHz => r_counter[14].CLK
+clk_50MHz => r_counter[15].CLK
+clk_50MHz => r_counter[16].CLK
+out <= r_659Hz.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|song_top|fH_698Hz:t_fH
+clk_50MHz => r_698Hz.CLK
+clk_50MHz => r_counter[0].CLK
+clk_50MHz => r_counter[1].CLK
+clk_50MHz => r_counter[2].CLK
+clk_50MHz => r_counter[3].CLK
+clk_50MHz => r_counter[4].CLK
+clk_50MHz => r_counter[5].CLK
+clk_50MHz => r_counter[6].CLK
+clk_50MHz => r_counter[7].CLK
+clk_50MHz => r_counter[8].CLK
+clk_50MHz => r_counter[9].CLK
+clk_50MHz => r_counter[10].CLK
+clk_50MHz => r_counter[11].CLK
+clk_50MHz => r_counter[12].CLK
+clk_50MHz => r_counter[13].CLK
+clk_50MHz => r_counter[14].CLK
+clk_50MHz => r_counter[15].CLK
+clk_50MHz => r_counter[16].CLK
+out <= r_698Hz.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|song_top|f_349Hz:t_f
+clk_50MHz => r_349Hz.CLK
+clk_50MHz => r_counter[0].CLK
+clk_50MHz => r_counter[1].CLK
+clk_50MHz => r_counter[2].CLK
+clk_50MHz => r_counter[3].CLK
+clk_50MHz => r_counter[4].CLK
+clk_50MHz => r_counter[5].CLK
+clk_50MHz => r_counter[6].CLK
+clk_50MHz => r_counter[7].CLK
+clk_50MHz => r_counter[8].CLK
+clk_50MHz => r_counter[9].CLK
+clk_50MHz => r_counter[10].CLK
+clk_50MHz => r_counter[11].CLK
+clk_50MHz => r_counter[12].CLK
+clk_50MHz => r_counter[13].CLK
+clk_50MHz => r_counter[14].CLK
+clk_50MHz => r_counter[15].CLK
+clk_50MHz => r_counter[16].CLK
+clk_50MHz => r_counter[17].CLK
+out <= r_349Hz.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|song_top|gS_415Hz:t_gS
+clk_50MHz => r_415Hz.CLK
+clk_50MHz => r_counter[0].CLK
+clk_50MHz => r_counter[1].CLK
+clk_50MHz => r_counter[2].CLK
+clk_50MHz => r_counter[3].CLK
+clk_50MHz => r_counter[4].CLK
+clk_50MHz => r_counter[5].CLK
+clk_50MHz => r_counter[6].CLK
+clk_50MHz => r_counter[7].CLK
+clk_50MHz => r_counter[8].CLK
+clk_50MHz => r_counter[9].CLK
+clk_50MHz => r_counter[10].CLK
+clk_50MHz => r_counter[11].CLK
+clk_50MHz => r_counter[12].CLK
+clk_50MHz => r_counter[13].CLK
+clk_50MHz => r_counter[14].CLK
+clk_50MHz => r_counter[15].CLK
+clk_50MHz => r_counter[16].CLK
+clk_50MHz => r_counter[17].CLK
+out <= r_415Hz.DB_MAX_OUTPUT_PORT_TYPE
+
+

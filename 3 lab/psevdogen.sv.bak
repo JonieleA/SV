@@ -1,0 +1,10 @@
+module psevdogen();
+
+logic
+output logic ;
+input logic ;
+
+always_ff @() begin
+
+end
+

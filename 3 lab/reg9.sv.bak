@@ -1,0 +1,13 @@
+module reg9 (btn, clk, _rst, out);
+
+input logic btn, clk, _rst;
+logic [8:0] Q;
+output logic out;
+
+always_ff @(negedge _rst or posedge btn) begin
+if (!_rst) Q <= 1;
+else if (btn && Q < 8) Q <= {Q[0], Q[8:1]};
+end
+
+
+endmodule;

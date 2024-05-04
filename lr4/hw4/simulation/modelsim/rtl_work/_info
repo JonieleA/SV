@@ -1,0 +1,168 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/lr4/hw4/simulation/modelsim
+vgen_overlapped
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1701026730
+!i10b 1
+!s100 ZLY43DU;IfbHid^AX1K6X2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I`_?j3klZn:hdNGzo@;<F`1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1701011570
+8E:/lr4/hw4/src/gen_overlapped.sv
+FE:/lr4/hw4/src/gen_overlapped.sv
+!i122 3
+L0 1 22
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1701026730.000000
+!s107 E:/lr4/hw4/src/gen_overlapped.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lr4/hw4/src|E:/lr4/hw4/src/gen_overlapped.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+E:/lr4/hw4/src
+Z9 tCvgOpt 0
+vLFSR_GAL
+R1
+R2
+!i10b 1
+!s100 k;3>GT_RelFX?iCi9C;>k2
+R3
+I;0jl`k;D=9FJH[aTY<d1h3
+R4
+S1
+R0
+w1701026654
+8E:/lr4/hw4/src/LFSR_GAL.sv
+FE:/lr4/hw4/src/LFSR_GAL.sv
+!i122 0
+L0 1 19
+R5
+r1
+!s85 0
+31
+!s108 1701026729.000000
+!s107 E:/lr4/hw4/src/LFSR_GAL.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lr4/hw4/src|E:/lr4/hw4/src/LFSR_GAL.sv|
+!i113 1
+R7
+R8
+R9
+n@l@f@s@r_@g@a@l
+vmealy_overlapped
+R1
+R2
+!i10b 1
+!s100 3zKJU2;H[I1?UBo=RIoK;0
+R3
+IlB;1<NWSCa_T>SK<jIH5B3
+R4
+S1
+R0
+w1701026656
+8E:/lr4/hw4/src/mealy_overlapped.sv
+FE:/lr4/hw4/src/mealy_overlapped.sv
+!i122 2
+L0 1 40
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/lr4/hw4/src/mealy_overlapped.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lr4/hw4/src|E:/lr4/hw4/src/mealy_overlapped.sv|
+!i113 1
+R7
+R8
+R9
+vmoore_overlapped
+R1
+R2
+!i10b 1
+!s100 E@TRm>CfkRW;gzohXeY;11
+R3
+I5maV0Hk^Zg^fH[aU9z;BC0
+R4
+S1
+R0
+w1701026657
+8E:/lr4/hw4/src/moore_overlapped.sv
+FE:/lr4/hw4/src/moore_overlapped.sv
+!i122 1
+L0 1 48
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/lr4/hw4/src/moore_overlapped.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lr4/hw4/src|E:/lr4/hw4/src/moore_overlapped.sv|
+!i113 1
+R7
+R8
+R9
+vtb_gen_overlapped
+R1
+R2
+!i10b 1
+!s100 fnTCgoD9OQgdP3fd>HJNf2
+R3
+IeY4YUl>n`SNkg[6ZHcY2@2
+R4
+S1
+R0
+w1701011567
+8E:/lr4/hw4/src/tb_gen_overlapped.sv
+FE:/lr4/hw4/src/tb_gen_overlapped.sv
+!i122 5
+L0 1 42
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/lr4/hw4/src/tb_gen_overlapped.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lr4/hw4/src|E:/lr4/hw4/src/tb_gen_overlapped.sv|
+!i113 1
+R7
+R8
+R9
+vtop_gen_overlapped
+R1
+R2
+!i10b 1
+!s100 ?YS]>UfWd2aIDd?TBZ^`90
+R3
+IzM5@NNKm]W>04n=YW^Uk82
+R4
+S1
+R0
+w1701011568
+8E:/lr4/hw4/src/top_gen_overlapped.sv
+FE:/lr4/hw4/src/top_gen_overlapped.sv
+!i122 4
+L0 1 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/lr4/hw4/src/top_gen_overlapped.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lr4/hw4/src|E:/lr4/hw4/src/top_gen_overlapped.sv|
+!i113 1
+R7
+R8
+R9

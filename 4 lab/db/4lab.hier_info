@@ -1,0 +1,44 @@
+|reg16
+clk => ~NO_FANOUT~
+_rst => ~NO_FANOUT~
+D[0] => ~NO_FANOUT~
+D[1] => ~NO_FANOUT~
+D[2] => ~NO_FANOUT~
+D[3] => ~NO_FANOUT~
+D[4] => ~NO_FANOUT~
+D[5] => ~NO_FANOUT~
+D[6] => ~NO_FANOUT~
+D[7] => ~NO_FANOUT~
+D[8] => ~NO_FANOUT~
+D[9] => ~NO_FANOUT~
+D[10] => ~NO_FANOUT~
+D[11] => ~NO_FANOUT~
+D[12] => ~NO_FANOUT~
+D[13] => ~NO_FANOUT~
+D[14] => ~NO_FANOUT~
+D[15] => ~NO_FANOUT~
+Q_par[0] <= <GND>
+Q_par[1] <= <GND>
+Q_par[2] <= <GND>
+Q_par[3] <= <GND>
+Q_par[4] <= <GND>
+Q_par[5] <= <GND>
+Q_par[6] <= <GND>
+Q_par[7] <= <GND>
+Q_par[8] <= <GND>
+Q_par[9] <= <GND>
+Q_par[10] <= <GND>
+Q_par[11] <= <GND>
+Q_par[12] <= <GND>
+Q_par[13] <= <GND>
+Q_par[14] <= <GND>
+Q_par[15] <= <GND>
+Q_pos <= <GND>
+btn1 => ~NO_FANOUT~
+btn2 => ~NO_FANOUT~
+btn3 => ~NO_FANOUT~
+btn4 => ~NO_FANOUT~
+btn5 => ~NO_FANOUT~
+btn6 => ~NO_FANOUT~
+
+

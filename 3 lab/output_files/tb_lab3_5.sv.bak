@@ -1,0 +1,23 @@
+
+`timescale 1ns/1ns
+
+module tb_lab3_5;
+
+
+logic out, [32:0] Q, btn;
+
+
+
+detect_front DUT (.btn(btn), .out(out));
+initial clk = 0;
+always #1 clk = !clk;
+
+initial
+#10000000 $stop;
+
+initial begin
+$display("Start");
+
+end
+
+endmodule

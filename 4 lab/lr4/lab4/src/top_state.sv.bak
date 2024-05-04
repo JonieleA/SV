@@ -1,0 +1,4 @@
+module top_state ();
+
+input logic clk, res_n, D;
+output logic 		 F0, F1;

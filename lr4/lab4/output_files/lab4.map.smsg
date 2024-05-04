@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at universal_shift_reg.sv(51): always construct contains both blocking and non-blocking assignments File: D:/Project/Quartus Prime/lab4/src/universal_shift_reg.sv Line: 51

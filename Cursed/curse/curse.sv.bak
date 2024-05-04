@@ -1,0 +1,12 @@
+module curse(inp, priem, disp1, disp2, disp3, disp4);
+
+input logic [7:0] inp;
+input logic priem;
+output logic disp1, disp2, disp3, disp4;
+
+enum logic [:] {ESC, CSI, left_cursor, right_cursor, Delete1, Delete2, Space, BackSpace, Enter, Disp} state;
+logic [3:0] cursor;
+
+
+
+endmodule

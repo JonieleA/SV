@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Disp1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Disp4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "inp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "inp[7]",
+					"strict" : false
+				},
+				{
+					"name" : "inp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "inp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clear_disp",
+					"strict" : false
+				},
+				{
+					"name" : "priem_in",
+					"strict" : false
+				},
+				{
+					"name" : "gen_in",
+					"strict" : false
+				},
+				{
+					"name" : "Reset_1",
+					"strict" : false
+				},
+				{
+					"name" : "Reset_2",
+					"strict" : false
+				},
+				{
+					"name" : "Reset_3",
+					"strict" : false
+				},
+				{
+					"name" : "Reset_4",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+
+State Machine - |top_gen_overlapped|gen_overlapped:UUT|mealy_overlapped:U5|state
+Name state.READY_3 state.READY_2 state.READY_1 state.OFF state.READY_4 
+state.OFF 0 0 0 0 0 
+state.READY_1 0 0 1 1 0 
+state.READY_2 0 1 0 1 0 
+state.READY_3 1 0 0 1 0 
+state.READY_4 0 0 0 1 1 
+
+State Machine - |top_gen_overlapped|gen_overlapped:UUT|moore_overlapped:U4|state
+Name state.ON state.READY_4 state.READY_3 state.READY_2 state.READY_1 state.OFF 
+state.OFF 0 0 0 0 0 0 
+state.READY_1 0 0 0 0 1 1 
+state.READY_2 0 0 0 1 0 1 
+state.READY_3 0 0 1 0 0 1 
+state.READY_4 0 1 0 0 0 1 
+state.ON 1 0 0 0 0 1 

@@ -1,0 +1,74 @@
+# Reading pref.tcl
+# do 4lab_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Programs/intelFPGA/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+E:/4\ lab {E:/4 lab/snail_mur.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:21:55 on Nov 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/4 lab" E:/4 lab/snail_mur.sv 
+# -- Compiling module snail_mur
+# 
+# Top level modules:
+# 	snail_mur
+# End time: 13:21:55 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/4\ lab {E:/4 lab/snail_mealey.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:21:55 on Nov 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/4 lab" E:/4 lab/snail_mealey.sv 
+# -- Compiling module snail_mealey
+# 
+# Top level modules:
+# 	snail_mealey
+# End time: 13:21:55 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/4\ lab {E:/4 lab/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:21:55 on Nov 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/4 lab" E:/4 lab/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 13:21:55 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+E:/4\ lab/output_files {E:/4 lab/output_files/lab4_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:21:55 on Nov 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/4 lab/output_files" E:/4 lab/output_files/lab4_tb.sv 
+# -- Compiling module lab4_tb
+# 
+# Top level modules:
+# 	lab4_tb
+# End time: 13:21:55 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  lab4_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" lab4_tb 
+# Start time: 13:21:55 on Nov 12,2023
+# Loading sv_std.std
+# Loading work.lab4_tb
+# Loading work.top
+# Loading work.snail_mur
+# Loading work.snail_mealey
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : E:/4 lab/output_files/lab4_tb.sv(42)
+#    Time: 50 ns  Iteration: 0  Instance: /lab4_tb
+# Break in Module lab4_tb at E:/4 lab/output_files/lab4_tb.sv line 42
+# End time: 13:27:35 on Nov 12,2023, Elapsed time: 0:05:40
+# Errors: 0, Warnings: 0

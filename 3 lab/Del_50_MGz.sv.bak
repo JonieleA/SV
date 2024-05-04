@@ -1,0 +1,20 @@
+module Del_50_MGz(clk, _rst, n_clk, Q);
+
+input logic clk, _rst;
+output logic [26:0] Q;
+output logic n_clk;
+
+always_ff @(posedge clk, negedge _rst) begin
+if (!_rst) Q <= 0;
+else if (Q != 50000000) Q <= Q+1;
+else Q <= 0;
+end
+
+always_comb begin
+case ( Q )
+	27'd50000000 : n_clk = 1'b1;
+	default : n_clk = 1'b0;
+endcase
+end
+
+endmodule

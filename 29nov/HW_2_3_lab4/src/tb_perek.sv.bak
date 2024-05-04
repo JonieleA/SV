@@ -1,0 +1,38 @@
+`timescale 1ns / 1ns
+
+module tb_perek;
+
+logic clk, nres;
+logic INP;
+logic OUT_MOORE, OUT_MEALY;
+
+top_perek (.clk(clk), .nres(nres), .INP(INP), .OUT_MOORE(OUT_MOORE), .OUT_MEALY(OUT_MEALY));
+
+initial begin
+	clk = 1;
+	nres = 1;
+	INP = 0;
+end
+
+initial
+	#30 repeat(2) #5 nres = !nres;
+
+initial begin
+	#100 INP = 1;
+	#30  INP = 0;
+	#40  INP = 1;
+	#130 INP = 0;
+	#90  INP = 1;
+	#20  INP = 0;
+	#60  INP = 1;
+	#140 INP = 0;
+	#40  INP = 1;
+end
+
+always
+	#20 clk = !clk;
+
+initial
+	#900 $stop;
+
+endmodule

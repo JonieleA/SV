@@ -1,0 +1,14 @@
+reg_cir_par #(parameter Width = 15) (D, clk, _rst, Q, shift_l, shift_r);
+
+input logic [Width-1:0] D;
+input logic clk, _rst, sd_l, sd_r;
+
+output signed logic [Width-1:0] Q;
+
+always_ff @(posedge clk or negedge _rst) begin
+	if (!_rst) Q <= 0;
+	else if (shift_l == 0 & shift_r == 0) Q <= D;
+	else if (shift_l) Q <= {Q[0], Q[Width-1:1]};
+	else if (shift_r) Q <= {Q[Width-2:0], Q[Width-1]};
+end
+

@@ -1,0 +1,21 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "MUX_out",
+					"strict" : false
+				},
+				{
+					"name" : "clkTop",
+					"strict" : false
+				},
+				{
+					"name" : "nrstTop",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

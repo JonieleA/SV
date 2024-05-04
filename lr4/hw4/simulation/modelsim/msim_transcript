@@ -1,0 +1,108 @@
+# Reading pref.tcl
+# do hw4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Programs/intelFPGA/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+E:/lr4/hw4/src {E:/lr4/hw4/src/LFSR_GAL.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:25:29 on Nov 26,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/lr4/hw4/src" E:/lr4/hw4/src/LFSR_GAL.sv 
+# -- Compiling module LFSR_GAL
+# 
+# Top level modules:
+# 	LFSR_GAL
+# End time: 22:25:30 on Nov 26,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/lr4/hw4/src {E:/lr4/hw4/src/moore_overlapped.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:25:30 on Nov 26,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/lr4/hw4/src" E:/lr4/hw4/src/moore_overlapped.sv 
+# -- Compiling module moore_overlapped
+# 
+# Top level modules:
+# 	moore_overlapped
+# End time: 22:25:30 on Nov 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/lr4/hw4/src {E:/lr4/hw4/src/mealy_overlapped.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:25:30 on Nov 26,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/lr4/hw4/src" E:/lr4/hw4/src/mealy_overlapped.sv 
+# -- Compiling module mealy_overlapped
+# 
+# Top level modules:
+# 	mealy_overlapped
+# End time: 22:25:30 on Nov 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/lr4/hw4/src {E:/lr4/hw4/src/gen_overlapped.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:25:30 on Nov 26,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/lr4/hw4/src" E:/lr4/hw4/src/gen_overlapped.sv 
+# -- Compiling module gen_overlapped
+# 
+# Top level modules:
+# 	gen_overlapped
+# End time: 22:25:30 on Nov 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/lr4/hw4/src {E:/lr4/hw4/src/top_gen_overlapped.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:25:30 on Nov 26,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/lr4/hw4/src" E:/lr4/hw4/src/top_gen_overlapped.sv 
+# -- Compiling module top_gen_overlapped
+# 
+# Top level modules:
+# 	top_gen_overlapped
+# End time: 22:25:30 on Nov 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+E:/lr4/hw4/src {E:/lr4/hw4/src/tb_gen_overlapped.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:25:30 on Nov 26,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/lr4/hw4/src" E:/lr4/hw4/src/tb_gen_overlapped.sv 
+# -- Compiling module tb_gen_overlapped
+# 
+# Top level modules:
+# 	tb_gen_overlapped
+# End time: 22:25:30 on Nov 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_gen_overlapped
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_gen_overlapped 
+# Start time: 22:25:30 on Nov 26,2023
+# Loading sv_std.std
+# Loading work.tb_gen_overlapped
+# Loading work.top_gen_overlapped
+# Loading work.gen_overlapped
+# Loading work.LFSR_GAL
+# Loading work.moore_overlapped
+# Loading work.mealy_overlapped
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'lfsr_out'. The port definition is at: E:/lr4/hw4/src/LFSR_GAL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gen_overlapped/DUT/UUT/U1 File: E:/lr4/hw4/src/gen_overlapped.sv Line: 11
+# ** Error (suppressible): (vsim-3839) Variable '/tb_gen_overlapped/DUT/UUT/Seed_1', driven via a port connection, is multiply driven. See E:/lr4/hw4/src/top_gen_overlapped.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gen_overlapped/DUT/UUT/U1 File: E:/lr4/hw4/src/gen_overlapped.sv Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'D'. The port definition is at: E:/lr4/hw4/src/LFSR_GAL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gen_overlapped/DUT/UUT/U1 File: E:/lr4/hw4/src/gen_overlapped.sv Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'lfsr_out'. The port definition is at: E:/lr4/hw4/src/LFSR_GAL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gen_overlapped/DUT/UUT/U2 File: E:/lr4/hw4/src/gen_overlapped.sv Line: 12
+# ** Error (suppressible): (vsim-3839) Variable '/tb_gen_overlapped/DUT/UUT/Seed_2', driven via a port connection, is multiply driven. See E:/lr4/hw4/src/top_gen_overlapped.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gen_overlapped/DUT/UUT/U2 File: E:/lr4/hw4/src/gen_overlapped.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'D'. The port definition is at: E:/lr4/hw4/src/LFSR_GAL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gen_overlapped/DUT/UUT/U2 File: E:/lr4/hw4/src/gen_overlapped.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'lfsr_out'. The port definition is at: E:/lr4/hw4/src/LFSR_GAL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gen_overlapped/DUT/UUT/U3 File: E:/lr4/hw4/src/gen_overlapped.sv Line: 13
+# ** Error (suppressible): (vsim-3839) Variable '/tb_gen_overlapped/DUT/UUT/Seed_3', driven via a port connection, is multiply driven. See E:/lr4/hw4/src/top_gen_overlapped.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gen_overlapped/DUT/UUT/U3 File: E:/lr4/hw4/src/gen_overlapped.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'D'. The port definition is at: E:/lr4/hw4/src/LFSR_GAL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gen_overlapped/DUT/UUT/U3 File: E:/lr4/hw4/src/gen_overlapped.sv Line: 13
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./hw4_run_msim_rtl_verilog.do PAUSED at line 16
+# End time: 22:28:01 on Nov 26,2023, Elapsed time: 0:02:31
+# Errors: 3, Warnings: 6

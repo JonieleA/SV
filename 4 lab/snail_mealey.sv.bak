@@ -1,0 +1,25 @@
+module snail_mealey(D, clk, _rst, Q);
+
+input logic D, clk, _rst;
+output logic Q;
+
+enum logic {SAD = 1'b0, HOPE} state, nextstate;
+
+//регистр состояний
+always_ff @(posedge clk, negedge _rst)
+if ( !_rst )
+state <= SAD;
+else
+state <= nextstate;
+
+//комбинационная функция состояний
+always_comb
+case ( state )
+SAD, HOPE : nextstate = (D) ? HOPE : SAD;
+default : nextstate = SAD;
+endcase
+
+//выходная комбинационная логика
+assign Q = (D == 1'b1 && state == HOPE) ? 1'b1 : 1'b0;
+
+endmodule

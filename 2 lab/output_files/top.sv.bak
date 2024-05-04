@@ -1,0 +1,5 @@
+module top (S, D);
+
+input logic [7:0] S;
+output logic [3:0] D;
+

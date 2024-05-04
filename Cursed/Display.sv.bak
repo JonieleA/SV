@@ -1,0 +1,6 @@
+module Display (inp, clk, priem, SET1, SET2, SET3, SET4, Reset_1, Reset_2, Reset_3, Reset_4, Disp1, Disp2, Disp3, Disp4);
+
+input logic clk, priem, SET1, SET2, SET3, SET4, Reset_1, Reset_2, Reset_3, Reset_4;
+output logic Disp1, Disp2, Disp3, Disp4;
+input logic [7:0] inp;
+

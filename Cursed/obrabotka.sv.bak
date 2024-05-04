@@ -1,0 +1,18 @@
+module obrabotka (inp, clk, priem, Reset_1, Reset_2, Reset_3, Reset_4, res, left_cursor, right_cursor, Delete, Enter)
+
+input logic clk, priem, Reset_1, Reset_2, Reset_3, Reset_4;
+input logic [7:0] inp;
+output logic [7:0] res;
+output logic left_cursor, right_cursor, Delete, Enter;
+
+logic Trig_1, Trig_2, Trig_3, Trig_4;
+logic nclk, res1 ,res2, res3, res4;
+
+
+
+register reg1 (.Q(Trig_1), .D(inp), .clk(nclk), .rst(res1));
+register reg2 (.Q(Trig_2), .D(Trig_1), .clk(nclk), .rst(res2));
+register reg3 (.Q(Trig_3), .D(Trig_2), .clk(nclk), .rst(res3));
+register reg4 (.Q(Trig_4), .D(Trig_3), .clk(nclk), .rst(res4));
+
+endmodule

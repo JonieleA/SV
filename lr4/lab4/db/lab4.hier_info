@@ -1,0 +1,27 @@
+|top_state
+clk => clk.IN2
+res_n => res_n.IN2
+D => D.IN2
+F0 << mealy:U1.F
+F1 << moore:U2.F
+
+
+|top_state|mealy:U1
+clk => state~1.DATAIN
+res_n => state~3.DATAIN
+D => F.IN0
+D => nextstate.READY.DATAB
+D => nextstate.ON.DATAA
+D => state.OFF.DATAIN
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_state|moore:U2
+clk => state~1.DATAIN
+res_n => state~3.DATAIN
+D => nextstate.READY.DATAB
+D => nextstate.ON.DATAA
+D => state.OFF.DATAIN
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+

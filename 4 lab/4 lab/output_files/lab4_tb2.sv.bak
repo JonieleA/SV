@@ -1,0 +1,27 @@
+module lab4_tb2;
+
+logic clk, _rst, green, yellow, red;
+
+
+top DUT(.clk(clk), ._rst(_rst), .green(green), .yellow(yellow), .red(red));
+
+//logic [63:0] textstate;
+//always_comb
+//case ( state )
+//	STATE1 : textstate = 'SAD';
+//	STATE2 : textstate = 'HOPE';
+//	STATE3 : textstate = 'HOORAY';
+//endcase
+//logic [63:0] state = DUT.textstate;
+
+initial begin
+clk = 1'b0;
+_rst = 1'b0;
+#1 _rst = 1'b1;
+end
+
+always #1 clk = !clk;
+
+initial #100 $stop;
+
+endmodule

@@ -1,0 +1,18 @@
+module sch_par #(parameter schet = 1 ) (enable, out,clk);
+
+input logic enable, clk;
+logic [3:0] Q;
+output logic out;
+
+always_ff @(posedge clk or posedge btn) begin
+	if (!enable) Q <= 8;
+	else if (clk && endble && Q != 0) Q <= Q - 1;
+	else if (clk && endble && Q == 0 ) Q <= 8;
+end
+
+always_comb begin
+if (enable && Q > 8-schet) out = 1;
+else out = 0;
+end
+
+endmodule

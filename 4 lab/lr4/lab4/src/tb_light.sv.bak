@@ -1,0 +1,57 @@
+`timescale 1ns / 1ps
+
+module tb_light;
+
+logic clk, res_n, en;
+logic [2:0]		  Set;
+logic [15:0] 	 D, Q;
+logic 				 F;
+
+traffic_light DUT (.clk( clk ), .res_n( res_n ), .Q0( RED ),
+						 .Q1( GREEN ), .Q2 ( YELLOW ));
+
+initial begin
+	clk = 0;
+	res_n = 1;
+	D = 0;
+	en = 1;
+	Set = 3'b001;
+end
+
+always
+	#10 clk = !clk;
+
+initial
+	repeat(2) #10 res_n = !res_n;
+
+initial begin
+	#40  D = 16'h7F4A;
+		  Set = 3'b000;
+	#60  D = 16'h0000;
+		  Set = 3'b001;
+	#60  Set = 3'b011;
+	#120 Set = 3'b001;
+	#60  Set = 3'b100;
+	#140 Set = 3'b001;
+	#60  Set = 3'b010;
+	#360 D = 16'h1B7E;
+		  Set = 3'b000;
+	#60  Set = 3'b001;
+		  D = 16'h0000;
+	#60  Set = 3'b110;
+	#100 Set = 3'b001;
+	#60  Set = 3'b101;
+	#180 Set = 3'b001;
+	#60  D = 16'h91CF;
+		  Set = 3'b000;
+	#80		  en = 0;
+		  Set = 3'b000;
+		  D = 16'h2B4A;
+	#100 Set = 3'b001;
+	#180 		  en = 1;
+end
+
+initial
+	#2000 $stop;
+      
+endmodule

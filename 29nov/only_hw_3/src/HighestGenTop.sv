@@ -1,0 +1,9 @@
+module HighestGenTop (clk, nres, OUTP_MOORE_NEPEREK, OUTP_MEALY_NEPEREK, OUTP_MOORE_PEREK, OUTP_MEALY_PEREK);
+
+input logic clk, nres;
+output logic OUTP_MOORE_NEPEREK, OUTP_MEALY_NEPEREK, OUTP_MOORE_PEREK, OUTP_MEALY_PEREK;
+
+gen_neperek DUT_gen_neperek(.clk(clk), .nres(nres), .OUTP_MOORE_NEPEREK(OUTP_MOORE_NEPEREK), .OUTP_MEALY_NEPEREK(OUTP_MEALY_NEPEREK));
+gen_perek DUT_gen_perek(.clk(clk), .nres(nres), .OUTP_MOORE_PEREK(OUTP_MOORE_PEREK), .OUTP_MEALY_PEREK(OUTP_MEALY_PEREK));
+
+endmodule

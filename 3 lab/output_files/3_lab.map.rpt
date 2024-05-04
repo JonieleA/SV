@@ -1,0 +1,1266 @@
+Analysis & Synthesis report for 3_lab
+Thu Nov 09 21:41:46 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: div:DUT1
+ 12. Parameter Settings for User Entity Instance: div:DUT2
+ 13. Parameter Settings for User Entity Instance: div:DUT3
+ 14. Parameter Settings for User Entity Instance: div:DUT4
+ 15. Parameter Settings for User Entity Instance: div:DUT5
+ 16. Parameter Settings for User Entity Instance: div:DUT6
+ 17. Parameter Settings for User Entity Instance: div:DUT7
+ 18. Parameter Settings for User Entity Instance: div:DUT8
+ 19. Parameter Settings for User Entity Instance: div:DUT9
+ 20. Parameter Settings for User Entity Instance: div:DUT10
+ 21. Parameter Settings for User Entity Instance: div:DUT11
+ 22. Parameter Settings for User Entity Instance: div:DUT12
+ 23. Parameter Settings for User Entity Instance: div:DUT13
+ 24. Parameter Settings for User Entity Instance: div:DUT14
+ 25. Parameter Settings for User Entity Instance: div:DUT15
+ 26. Parameter Settings for User Entity Instance: div:DUT16
+ 27. Parameter Settings for User Entity Instance: div:DUT17
+ 28. Parameter Settings for User Entity Instance: div:DUT18
+ 29. Parameter Settings for User Entity Instance: div:DUT19
+ 30. Parameter Settings for User Entity Instance: div:DUT20
+ 31. Post-Synthesis Netlist Statistics for Top Partition
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Nov 09 21:41:46 2023       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; 3_lab                                       ;
+; Top-level Entity Name              ; num1                                        ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 151                                         ;
+;     Total combinational functions  ; 151                                         ;
+;     Dedicated logic registers      ; 39                                          ;
+; Total registers                    ; 39                                          ;
+; Total pins                         ; 5                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE6E22C8        ;                    ;
+; Top-level entity name                                            ; num1               ; 3_lab              ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                     ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+; num1.sv                          ; yes             ; User SystemVerilog HDL File  ; E:/3 lab/num1.sv             ;         ;
+; div.sv                           ; yes             ; User SystemVerilog HDL File  ; E:/3 lab/div.sv              ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 151       ;
+;                                             ;           ;
+; Total combinational functions               ; 151       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 92        ;
+;     -- 3 input functions                    ; 16        ;
+;     -- <=2 input functions                  ; 43        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 115       ;
+;     -- arithmetic mode                      ; 36        ;
+;                                             ;           ;
+; Total registers                             ; 39        ;
+;     -- Dedicated logic registers            ; 39        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 5         ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 39        ;
+; Total fan-out                               ; 618       ;
+; Average fan-out                             ; 3.09      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |num1                      ; 151 (36)            ; 39 (6)                    ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |num1               ; num1        ; work         ;
+;    |div:DUT10|             ; 37 (37)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT10     ; div         ; work         ;
+;    |div:DUT11|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT11     ; div         ; work         ;
+;    |div:DUT12|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT12     ; div         ; work         ;
+;    |div:DUT13|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT13     ; div         ; work         ;
+;    |div:DUT14|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT14     ; div         ; work         ;
+;    |div:DUT15|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT15     ; div         ; work         ;
+;    |div:DUT16|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT16     ; div         ; work         ;
+;    |div:DUT17|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT17     ; div         ; work         ;
+;    |div:DUT18|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT18     ; div         ; work         ;
+;    |div:DUT19|             ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT19     ; div         ; work         ;
+;    |div:DUT1|              ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT1      ; div         ; work         ;
+;    |div:DUT20|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT20     ; div         ; work         ;
+;    |div:DUT2|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT2      ; div         ; work         ;
+;    |div:DUT3|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT3      ; div         ; work         ;
+;    |div:DUT4|              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT4      ; div         ; work         ;
+;    |div:DUT5|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT5      ; div         ; work         ;
+;    |div:DUT6|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT6      ; div         ; work         ;
+;    |div:DUT7|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT7      ; div         ; work         ;
+;    |div:DUT8|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT8      ; div         ; work         ;
+;    |div:DUT9|              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |num1|div:DUT9      ; div         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                      ;
++-----------------------------------------+-------------------------------+
+; Register name                           ; Reason for Removal            ;
++-----------------------------------------+-------------------------------+
+; ctr[0]~en                               ; Lost fanout                   ;
+; ctr[1]~en                               ; Lost fanout                   ;
+; ctr[2]~en                               ; Lost fanout                   ;
+; ctr[3]~en                               ; Lost fanout                   ;
+; ctr[4]~en                               ; Lost fanout                   ;
+; ctr[5]~en                               ; Lost fanout                   ;
+; div:DUT11|ctr[32]                       ; Merged with div:DUT10|ctr[32] ;
+; div:DUT12|ctr[32]                       ; Merged with div:DUT10|ctr[32] ;
+; div:DUT13|ctr[32]                       ; Merged with div:DUT10|ctr[32] ;
+; div:DUT14|ctr[32]                       ; Merged with div:DUT10|ctr[32] ;
+; div:DUT15|ctr[32]                       ; Merged with div:DUT10|ctr[32] ;
+; div:DUT16|ctr[32]                       ; Merged with div:DUT10|ctr[32] ;
+; div:DUT17|ctr[32]                       ; Merged with div:DUT10|ctr[32] ;
+; div:DUT18|ctr[32]                       ; Merged with div:DUT10|ctr[32] ;
+; div:DUT19|ctr[32]                       ; Merged with div:DUT10|ctr[32] ;
+; div:DUT1|ctr[32]                        ; Merged with div:DUT10|ctr[32] ;
+; div:DUT20|ctr[32]                       ; Merged with div:DUT10|ctr[32] ;
+; div:DUT2|ctr[32]                        ; Merged with div:DUT10|ctr[32] ;
+; div:DUT3|ctr[32]                        ; Merged with div:DUT10|ctr[32] ;
+; div:DUT4|ctr[32]                        ; Merged with div:DUT10|ctr[32] ;
+; div:DUT5|ctr[32]                        ; Merged with div:DUT10|ctr[32] ;
+; div:DUT6|ctr[32]                        ; Merged with div:DUT10|ctr[32] ;
+; div:DUT7|ctr[32]                        ; Merged with div:DUT10|ctr[32] ;
+; div:DUT8|ctr[32]                        ; Merged with div:DUT10|ctr[32] ;
+; div:DUT9|ctr[32]                        ; Merged with div:DUT10|ctr[32] ;
+; div:DUT11|ctr[31]                       ; Merged with div:DUT10|ctr[31] ;
+; div:DUT12|ctr[31]                       ; Merged with div:DUT10|ctr[31] ;
+; div:DUT13|ctr[31]                       ; Merged with div:DUT10|ctr[31] ;
+; div:DUT14|ctr[31]                       ; Merged with div:DUT10|ctr[31] ;
+; div:DUT15|ctr[31]                       ; Merged with div:DUT10|ctr[31] ;
+; div:DUT16|ctr[31]                       ; Merged with div:DUT10|ctr[31] ;
+; div:DUT17|ctr[31]                       ; Merged with div:DUT10|ctr[31] ;
+; div:DUT18|ctr[31]                       ; Merged with div:DUT10|ctr[31] ;
+; div:DUT19|ctr[31]                       ; Merged with div:DUT10|ctr[31] ;
+; div:DUT1|ctr[31]                        ; Merged with div:DUT10|ctr[31] ;
+; div:DUT20|ctr[31]                       ; Merged with div:DUT10|ctr[31] ;
+; div:DUT2|ctr[31]                        ; Merged with div:DUT10|ctr[31] ;
+; div:DUT3|ctr[31]                        ; Merged with div:DUT10|ctr[31] ;
+; div:DUT4|ctr[31]                        ; Merged with div:DUT10|ctr[31] ;
+; div:DUT5|ctr[31]                        ; Merged with div:DUT10|ctr[31] ;
+; div:DUT6|ctr[31]                        ; Merged with div:DUT10|ctr[31] ;
+; div:DUT7|ctr[31]                        ; Merged with div:DUT10|ctr[31] ;
+; div:DUT8|ctr[31]                        ; Merged with div:DUT10|ctr[31] ;
+; div:DUT9|ctr[31]                        ; Merged with div:DUT10|ctr[31] ;
+; div:DUT11|ctr[30]                       ; Merged with div:DUT10|ctr[30] ;
+; div:DUT12|ctr[30]                       ; Merged with div:DUT10|ctr[30] ;
+; div:DUT13|ctr[30]                       ; Merged with div:DUT10|ctr[30] ;
+; div:DUT14|ctr[30]                       ; Merged with div:DUT10|ctr[30] ;
+; div:DUT15|ctr[30]                       ; Merged with div:DUT10|ctr[30] ;
+; div:DUT16|ctr[30]                       ; Merged with div:DUT10|ctr[30] ;
+; div:DUT17|ctr[30]                       ; Merged with div:DUT10|ctr[30] ;
+; div:DUT18|ctr[30]                       ; Merged with div:DUT10|ctr[30] ;
+; div:DUT19|ctr[30]                       ; Merged with div:DUT10|ctr[30] ;
+; div:DUT1|ctr[30]                        ; Merged with div:DUT10|ctr[30] ;
+; div:DUT20|ctr[30]                       ; Merged with div:DUT10|ctr[30] ;
+; div:DUT2|ctr[30]                        ; Merged with div:DUT10|ctr[30] ;
+; div:DUT3|ctr[30]                        ; Merged with div:DUT10|ctr[30] ;
+; div:DUT4|ctr[30]                        ; Merged with div:DUT10|ctr[30] ;
+; div:DUT5|ctr[30]                        ; Merged with div:DUT10|ctr[30] ;
+; div:DUT6|ctr[30]                        ; Merged with div:DUT10|ctr[30] ;
+; div:DUT7|ctr[30]                        ; Merged with div:DUT10|ctr[30] ;
+; div:DUT8|ctr[30]                        ; Merged with div:DUT10|ctr[30] ;
+; div:DUT9|ctr[30]                        ; Merged with div:DUT10|ctr[30] ;
+; div:DUT11|ctr[29]                       ; Merged with div:DUT10|ctr[29] ;
+; div:DUT12|ctr[29]                       ; Merged with div:DUT10|ctr[29] ;
+; div:DUT13|ctr[29]                       ; Merged with div:DUT10|ctr[29] ;
+; div:DUT14|ctr[29]                       ; Merged with div:DUT10|ctr[29] ;
+; div:DUT15|ctr[29]                       ; Merged with div:DUT10|ctr[29] ;
+; div:DUT16|ctr[29]                       ; Merged with div:DUT10|ctr[29] ;
+; div:DUT17|ctr[29]                       ; Merged with div:DUT10|ctr[29] ;
+; div:DUT18|ctr[29]                       ; Merged with div:DUT10|ctr[29] ;
+; div:DUT19|ctr[29]                       ; Merged with div:DUT10|ctr[29] ;
+; div:DUT1|ctr[29]                        ; Merged with div:DUT10|ctr[29] ;
+; div:DUT20|ctr[29]                       ; Merged with div:DUT10|ctr[29] ;
+; div:DUT2|ctr[29]                        ; Merged with div:DUT10|ctr[29] ;
+; div:DUT3|ctr[29]                        ; Merged with div:DUT10|ctr[29] ;
+; div:DUT4|ctr[29]                        ; Merged with div:DUT10|ctr[29] ;
+; div:DUT5|ctr[29]                        ; Merged with div:DUT10|ctr[29] ;
+; div:DUT6|ctr[29]                        ; Merged with div:DUT10|ctr[29] ;
+; div:DUT7|ctr[29]                        ; Merged with div:DUT10|ctr[29] ;
+; div:DUT8|ctr[29]                        ; Merged with div:DUT10|ctr[29] ;
+; div:DUT9|ctr[29]                        ; Merged with div:DUT10|ctr[29] ;
+; div:DUT11|ctr[28]                       ; Merged with div:DUT10|ctr[28] ;
+; div:DUT12|ctr[28]                       ; Merged with div:DUT10|ctr[28] ;
+; div:DUT13|ctr[28]                       ; Merged with div:DUT10|ctr[28] ;
+; div:DUT14|ctr[28]                       ; Merged with div:DUT10|ctr[28] ;
+; div:DUT15|ctr[28]                       ; Merged with div:DUT10|ctr[28] ;
+; div:DUT16|ctr[28]                       ; Merged with div:DUT10|ctr[28] ;
+; div:DUT17|ctr[28]                       ; Merged with div:DUT10|ctr[28] ;
+; div:DUT18|ctr[28]                       ; Merged with div:DUT10|ctr[28] ;
+; div:DUT19|ctr[28]                       ; Merged with div:DUT10|ctr[28] ;
+; div:DUT1|ctr[28]                        ; Merged with div:DUT10|ctr[28] ;
+; div:DUT20|ctr[28]                       ; Merged with div:DUT10|ctr[28] ;
+; div:DUT2|ctr[28]                        ; Merged with div:DUT10|ctr[28] ;
+; div:DUT3|ctr[28]                        ; Merged with div:DUT10|ctr[28] ;
+; div:DUT4|ctr[28]                        ; Merged with div:DUT10|ctr[28] ;
+; div:DUT5|ctr[28]                        ; Merged with div:DUT10|ctr[28] ;
+; div:DUT6|ctr[28]                        ; Merged with div:DUT10|ctr[28] ;
+; div:DUT7|ctr[28]                        ; Merged with div:DUT10|ctr[28] ;
+; div:DUT8|ctr[28]                        ; Merged with div:DUT10|ctr[28] ;
+; div:DUT9|ctr[28]                        ; Merged with div:DUT10|ctr[28] ;
+; div:DUT11|ctr[27]                       ; Merged with div:DUT10|ctr[27] ;
+; div:DUT12|ctr[27]                       ; Merged with div:DUT10|ctr[27] ;
+; div:DUT13|ctr[27]                       ; Merged with div:DUT10|ctr[27] ;
+; div:DUT14|ctr[27]                       ; Merged with div:DUT10|ctr[27] ;
+; div:DUT15|ctr[27]                       ; Merged with div:DUT10|ctr[27] ;
+; div:DUT16|ctr[27]                       ; Merged with div:DUT10|ctr[27] ;
+; div:DUT17|ctr[27]                       ; Merged with div:DUT10|ctr[27] ;
+; div:DUT18|ctr[27]                       ; Merged with div:DUT10|ctr[27] ;
+; div:DUT19|ctr[27]                       ; Merged with div:DUT10|ctr[27] ;
+; div:DUT1|ctr[27]                        ; Merged with div:DUT10|ctr[27] ;
+; div:DUT20|ctr[27]                       ; Merged with div:DUT10|ctr[27] ;
+; div:DUT2|ctr[27]                        ; Merged with div:DUT10|ctr[27] ;
+; div:DUT3|ctr[27]                        ; Merged with div:DUT10|ctr[27] ;
+; div:DUT4|ctr[27]                        ; Merged with div:DUT10|ctr[27] ;
+; div:DUT5|ctr[27]                        ; Merged with div:DUT10|ctr[27] ;
+; div:DUT6|ctr[27]                        ; Merged with div:DUT10|ctr[27] ;
+; div:DUT7|ctr[27]                        ; Merged with div:DUT10|ctr[27] ;
+; div:DUT8|ctr[27]                        ; Merged with div:DUT10|ctr[27] ;
+; div:DUT9|ctr[27]                        ; Merged with div:DUT10|ctr[27] ;
+; div:DUT11|ctr[26]                       ; Merged with div:DUT10|ctr[26] ;
+; div:DUT12|ctr[26]                       ; Merged with div:DUT10|ctr[26] ;
+; div:DUT13|ctr[26]                       ; Merged with div:DUT10|ctr[26] ;
+; div:DUT14|ctr[26]                       ; Merged with div:DUT10|ctr[26] ;
+; div:DUT15|ctr[26]                       ; Merged with div:DUT10|ctr[26] ;
+; div:DUT16|ctr[26]                       ; Merged with div:DUT10|ctr[26] ;
+; div:DUT17|ctr[26]                       ; Merged with div:DUT10|ctr[26] ;
+; div:DUT18|ctr[26]                       ; Merged with div:DUT10|ctr[26] ;
+; div:DUT19|ctr[26]                       ; Merged with div:DUT10|ctr[26] ;
+; div:DUT1|ctr[26]                        ; Merged with div:DUT10|ctr[26] ;
+; div:DUT20|ctr[26]                       ; Merged with div:DUT10|ctr[26] ;
+; div:DUT2|ctr[26]                        ; Merged with div:DUT10|ctr[26] ;
+; div:DUT3|ctr[26]                        ; Merged with div:DUT10|ctr[26] ;
+; div:DUT4|ctr[26]                        ; Merged with div:DUT10|ctr[26] ;
+; div:DUT5|ctr[26]                        ; Merged with div:DUT10|ctr[26] ;
+; div:DUT6|ctr[26]                        ; Merged with div:DUT10|ctr[26] ;
+; div:DUT7|ctr[26]                        ; Merged with div:DUT10|ctr[26] ;
+; div:DUT8|ctr[26]                        ; Merged with div:DUT10|ctr[26] ;
+; div:DUT9|ctr[26]                        ; Merged with div:DUT10|ctr[26] ;
+; div:DUT11|ctr[25]                       ; Merged with div:DUT10|ctr[25] ;
+; div:DUT12|ctr[25]                       ; Merged with div:DUT10|ctr[25] ;
+; div:DUT13|ctr[25]                       ; Merged with div:DUT10|ctr[25] ;
+; div:DUT14|ctr[25]                       ; Merged with div:DUT10|ctr[25] ;
+; div:DUT15|ctr[25]                       ; Merged with div:DUT10|ctr[25] ;
+; div:DUT16|ctr[25]                       ; Merged with div:DUT10|ctr[25] ;
+; div:DUT17|ctr[25]                       ; Merged with div:DUT10|ctr[25] ;
+; div:DUT18|ctr[25]                       ; Merged with div:DUT10|ctr[25] ;
+; div:DUT19|ctr[25]                       ; Merged with div:DUT10|ctr[25] ;
+; div:DUT1|ctr[25]                        ; Merged with div:DUT10|ctr[25] ;
+; div:DUT20|ctr[25]                       ; Merged with div:DUT10|ctr[25] ;
+; div:DUT2|ctr[25]                        ; Merged with div:DUT10|ctr[25] ;
+; div:DUT3|ctr[25]                        ; Merged with div:DUT10|ctr[25] ;
+; div:DUT4|ctr[25]                        ; Merged with div:DUT10|ctr[25] ;
+; div:DUT5|ctr[25]                        ; Merged with div:DUT10|ctr[25] ;
+; div:DUT6|ctr[25]                        ; Merged with div:DUT10|ctr[25] ;
+; div:DUT7|ctr[25]                        ; Merged with div:DUT10|ctr[25] ;
+; div:DUT8|ctr[25]                        ; Merged with div:DUT10|ctr[25] ;
+; div:DUT9|ctr[25]                        ; Merged with div:DUT10|ctr[25] ;
+; div:DUT11|ctr[24]                       ; Merged with div:DUT10|ctr[24] ;
+; div:DUT12|ctr[24]                       ; Merged with div:DUT10|ctr[24] ;
+; div:DUT13|ctr[24]                       ; Merged with div:DUT10|ctr[24] ;
+; div:DUT14|ctr[24]                       ; Merged with div:DUT10|ctr[24] ;
+; div:DUT15|ctr[24]                       ; Merged with div:DUT10|ctr[24] ;
+; div:DUT16|ctr[24]                       ; Merged with div:DUT10|ctr[24] ;
+; div:DUT17|ctr[24]                       ; Merged with div:DUT10|ctr[24] ;
+; div:DUT18|ctr[24]                       ; Merged with div:DUT10|ctr[24] ;
+; div:DUT19|ctr[24]                       ; Merged with div:DUT10|ctr[24] ;
+; div:DUT1|ctr[24]                        ; Merged with div:DUT10|ctr[24] ;
+; div:DUT20|ctr[24]                       ; Merged with div:DUT10|ctr[24] ;
+; div:DUT2|ctr[24]                        ; Merged with div:DUT10|ctr[24] ;
+; div:DUT3|ctr[24]                        ; Merged with div:DUT10|ctr[24] ;
+; div:DUT4|ctr[24]                        ; Merged with div:DUT10|ctr[24] ;
+; div:DUT5|ctr[24]                        ; Merged with div:DUT10|ctr[24] ;
+; div:DUT6|ctr[24]                        ; Merged with div:DUT10|ctr[24] ;
+; div:DUT7|ctr[24]                        ; Merged with div:DUT10|ctr[24] ;
+; div:DUT8|ctr[24]                        ; Merged with div:DUT10|ctr[24] ;
+; div:DUT9|ctr[24]                        ; Merged with div:DUT10|ctr[24] ;
+; div:DUT11|ctr[23]                       ; Merged with div:DUT10|ctr[23] ;
+; div:DUT12|ctr[23]                       ; Merged with div:DUT10|ctr[23] ;
+; div:DUT13|ctr[23]                       ; Merged with div:DUT10|ctr[23] ;
+; div:DUT14|ctr[23]                       ; Merged with div:DUT10|ctr[23] ;
+; div:DUT15|ctr[23]                       ; Merged with div:DUT10|ctr[23] ;
+; div:DUT16|ctr[23]                       ; Merged with div:DUT10|ctr[23] ;
+; div:DUT17|ctr[23]                       ; Merged with div:DUT10|ctr[23] ;
+; div:DUT18|ctr[23]                       ; Merged with div:DUT10|ctr[23] ;
+; div:DUT19|ctr[23]                       ; Merged with div:DUT10|ctr[23] ;
+; div:DUT1|ctr[23]                        ; Merged with div:DUT10|ctr[23] ;
+; div:DUT20|ctr[23]                       ; Merged with div:DUT10|ctr[23] ;
+; div:DUT2|ctr[23]                        ; Merged with div:DUT10|ctr[23] ;
+; div:DUT3|ctr[23]                        ; Merged with div:DUT10|ctr[23] ;
+; div:DUT4|ctr[23]                        ; Merged with div:DUT10|ctr[23] ;
+; div:DUT5|ctr[23]                        ; Merged with div:DUT10|ctr[23] ;
+; div:DUT6|ctr[23]                        ; Merged with div:DUT10|ctr[23] ;
+; div:DUT7|ctr[23]                        ; Merged with div:DUT10|ctr[23] ;
+; div:DUT8|ctr[23]                        ; Merged with div:DUT10|ctr[23] ;
+; div:DUT9|ctr[23]                        ; Merged with div:DUT10|ctr[23] ;
+; div:DUT11|ctr[22]                       ; Merged with div:DUT10|ctr[22] ;
+; div:DUT12|ctr[22]                       ; Merged with div:DUT10|ctr[22] ;
+; div:DUT13|ctr[22]                       ; Merged with div:DUT10|ctr[22] ;
+; div:DUT14|ctr[22]                       ; Merged with div:DUT10|ctr[22] ;
+; div:DUT15|ctr[22]                       ; Merged with div:DUT10|ctr[22] ;
+; div:DUT16|ctr[22]                       ; Merged with div:DUT10|ctr[22] ;
+; div:DUT17|ctr[22]                       ; Merged with div:DUT10|ctr[22] ;
+; div:DUT18|ctr[22]                       ; Merged with div:DUT10|ctr[22] ;
+; div:DUT19|ctr[22]                       ; Merged with div:DUT10|ctr[22] ;
+; div:DUT1|ctr[22]                        ; Merged with div:DUT10|ctr[22] ;
+; div:DUT20|ctr[22]                       ; Merged with div:DUT10|ctr[22] ;
+; div:DUT2|ctr[22]                        ; Merged with div:DUT10|ctr[22] ;
+; div:DUT3|ctr[22]                        ; Merged with div:DUT10|ctr[22] ;
+; div:DUT4|ctr[22]                        ; Merged with div:DUT10|ctr[22] ;
+; div:DUT5|ctr[22]                        ; Merged with div:DUT10|ctr[22] ;
+; div:DUT6|ctr[22]                        ; Merged with div:DUT10|ctr[22] ;
+; div:DUT7|ctr[22]                        ; Merged with div:DUT10|ctr[22] ;
+; div:DUT8|ctr[22]                        ; Merged with div:DUT10|ctr[22] ;
+; div:DUT9|ctr[22]                        ; Merged with div:DUT10|ctr[22] ;
+; div:DUT11|ctr[21]                       ; Merged with div:DUT10|ctr[21] ;
+; div:DUT12|ctr[21]                       ; Merged with div:DUT10|ctr[21] ;
+; div:DUT13|ctr[21]                       ; Merged with div:DUT10|ctr[21] ;
+; div:DUT14|ctr[21]                       ; Merged with div:DUT10|ctr[21] ;
+; div:DUT15|ctr[21]                       ; Merged with div:DUT10|ctr[21] ;
+; div:DUT16|ctr[21]                       ; Merged with div:DUT10|ctr[21] ;
+; div:DUT17|ctr[21]                       ; Merged with div:DUT10|ctr[21] ;
+; div:DUT18|ctr[21]                       ; Merged with div:DUT10|ctr[21] ;
+; div:DUT19|ctr[21]                       ; Merged with div:DUT10|ctr[21] ;
+; div:DUT1|ctr[21]                        ; Merged with div:DUT10|ctr[21] ;
+; div:DUT20|ctr[21]                       ; Merged with div:DUT10|ctr[21] ;
+; div:DUT2|ctr[21]                        ; Merged with div:DUT10|ctr[21] ;
+; div:DUT3|ctr[21]                        ; Merged with div:DUT10|ctr[21] ;
+; div:DUT4|ctr[21]                        ; Merged with div:DUT10|ctr[21] ;
+; div:DUT5|ctr[21]                        ; Merged with div:DUT10|ctr[21] ;
+; div:DUT6|ctr[21]                        ; Merged with div:DUT10|ctr[21] ;
+; div:DUT7|ctr[21]                        ; Merged with div:DUT10|ctr[21] ;
+; div:DUT8|ctr[21]                        ; Merged with div:DUT10|ctr[21] ;
+; div:DUT9|ctr[21]                        ; Merged with div:DUT10|ctr[21] ;
+; div:DUT11|ctr[20]                       ; Merged with div:DUT10|ctr[20] ;
+; div:DUT12|ctr[20]                       ; Merged with div:DUT10|ctr[20] ;
+; div:DUT13|ctr[20]                       ; Merged with div:DUT10|ctr[20] ;
+; div:DUT14|ctr[20]                       ; Merged with div:DUT10|ctr[20] ;
+; div:DUT15|ctr[20]                       ; Merged with div:DUT10|ctr[20] ;
+; div:DUT16|ctr[20]                       ; Merged with div:DUT10|ctr[20] ;
+; div:DUT17|ctr[20]                       ; Merged with div:DUT10|ctr[20] ;
+; div:DUT18|ctr[20]                       ; Merged with div:DUT10|ctr[20] ;
+; div:DUT19|ctr[20]                       ; Merged with div:DUT10|ctr[20] ;
+; div:DUT1|ctr[20]                        ; Merged with div:DUT10|ctr[20] ;
+; div:DUT20|ctr[20]                       ; Merged with div:DUT10|ctr[20] ;
+; div:DUT2|ctr[20]                        ; Merged with div:DUT10|ctr[20] ;
+; div:DUT3|ctr[20]                        ; Merged with div:DUT10|ctr[20] ;
+; div:DUT4|ctr[20]                        ; Merged with div:DUT10|ctr[20] ;
+; div:DUT5|ctr[20]                        ; Merged with div:DUT10|ctr[20] ;
+; div:DUT6|ctr[20]                        ; Merged with div:DUT10|ctr[20] ;
+; div:DUT7|ctr[20]                        ; Merged with div:DUT10|ctr[20] ;
+; div:DUT8|ctr[20]                        ; Merged with div:DUT10|ctr[20] ;
+; div:DUT9|ctr[20]                        ; Merged with div:DUT10|ctr[20] ;
+; div:DUT11|ctr[19]                       ; Merged with div:DUT10|ctr[19] ;
+; div:DUT12|ctr[19]                       ; Merged with div:DUT10|ctr[19] ;
+; div:DUT13|ctr[19]                       ; Merged with div:DUT10|ctr[19] ;
+; div:DUT14|ctr[19]                       ; Merged with div:DUT10|ctr[19] ;
+; div:DUT15|ctr[19]                       ; Merged with div:DUT10|ctr[19] ;
+; div:DUT16|ctr[19]                       ; Merged with div:DUT10|ctr[19] ;
+; div:DUT17|ctr[19]                       ; Merged with div:DUT10|ctr[19] ;
+; div:DUT18|ctr[19]                       ; Merged with div:DUT10|ctr[19] ;
+; div:DUT19|ctr[19]                       ; Merged with div:DUT10|ctr[19] ;
+; div:DUT1|ctr[19]                        ; Merged with div:DUT10|ctr[19] ;
+; div:DUT20|ctr[19]                       ; Merged with div:DUT10|ctr[19] ;
+; div:DUT2|ctr[19]                        ; Merged with div:DUT10|ctr[19] ;
+; div:DUT3|ctr[19]                        ; Merged with div:DUT10|ctr[19] ;
+; div:DUT4|ctr[19]                        ; Merged with div:DUT10|ctr[19] ;
+; div:DUT5|ctr[19]                        ; Merged with div:DUT10|ctr[19] ;
+; div:DUT6|ctr[19]                        ; Merged with div:DUT10|ctr[19] ;
+; div:DUT7|ctr[19]                        ; Merged with div:DUT10|ctr[19] ;
+; div:DUT8|ctr[19]                        ; Merged with div:DUT10|ctr[19] ;
+; div:DUT9|ctr[19]                        ; Merged with div:DUT10|ctr[19] ;
+; div:DUT11|ctr[18]                       ; Merged with div:DUT10|ctr[18] ;
+; div:DUT12|ctr[18]                       ; Merged with div:DUT10|ctr[18] ;
+; div:DUT13|ctr[18]                       ; Merged with div:DUT10|ctr[18] ;
+; div:DUT14|ctr[18]                       ; Merged with div:DUT10|ctr[18] ;
+; div:DUT15|ctr[18]                       ; Merged with div:DUT10|ctr[18] ;
+; div:DUT16|ctr[18]                       ; Merged with div:DUT10|ctr[18] ;
+; div:DUT17|ctr[18]                       ; Merged with div:DUT10|ctr[18] ;
+; div:DUT18|ctr[18]                       ; Merged with div:DUT10|ctr[18] ;
+; div:DUT19|ctr[18]                       ; Merged with div:DUT10|ctr[18] ;
+; div:DUT1|ctr[18]                        ; Merged with div:DUT10|ctr[18] ;
+; div:DUT20|ctr[18]                       ; Merged with div:DUT10|ctr[18] ;
+; div:DUT2|ctr[18]                        ; Merged with div:DUT10|ctr[18] ;
+; div:DUT3|ctr[18]                        ; Merged with div:DUT10|ctr[18] ;
+; div:DUT4|ctr[18]                        ; Merged with div:DUT10|ctr[18] ;
+; div:DUT5|ctr[18]                        ; Merged with div:DUT10|ctr[18] ;
+; div:DUT6|ctr[18]                        ; Merged with div:DUT10|ctr[18] ;
+; div:DUT7|ctr[18]                        ; Merged with div:DUT10|ctr[18] ;
+; div:DUT8|ctr[18]                        ; Merged with div:DUT10|ctr[18] ;
+; div:DUT9|ctr[18]                        ; Merged with div:DUT10|ctr[18] ;
+; div:DUT11|ctr[17]                       ; Merged with div:DUT10|ctr[17] ;
+; div:DUT12|ctr[17]                       ; Merged with div:DUT10|ctr[17] ;
+; div:DUT13|ctr[17]                       ; Merged with div:DUT10|ctr[17] ;
+; div:DUT14|ctr[17]                       ; Merged with div:DUT10|ctr[17] ;
+; div:DUT15|ctr[17]                       ; Merged with div:DUT10|ctr[17] ;
+; div:DUT16|ctr[17]                       ; Merged with div:DUT10|ctr[17] ;
+; div:DUT17|ctr[17]                       ; Merged with div:DUT10|ctr[17] ;
+; div:DUT18|ctr[17]                       ; Merged with div:DUT10|ctr[17] ;
+; div:DUT19|ctr[17]                       ; Merged with div:DUT10|ctr[17] ;
+; div:DUT1|ctr[17]                        ; Merged with div:DUT10|ctr[17] ;
+; div:DUT20|ctr[17]                       ; Merged with div:DUT10|ctr[17] ;
+; div:DUT2|ctr[17]                        ; Merged with div:DUT10|ctr[17] ;
+; div:DUT3|ctr[17]                        ; Merged with div:DUT10|ctr[17] ;
+; div:DUT4|ctr[17]                        ; Merged with div:DUT10|ctr[17] ;
+; div:DUT5|ctr[17]                        ; Merged with div:DUT10|ctr[17] ;
+; div:DUT6|ctr[17]                        ; Merged with div:DUT10|ctr[17] ;
+; div:DUT7|ctr[17]                        ; Merged with div:DUT10|ctr[17] ;
+; div:DUT8|ctr[17]                        ; Merged with div:DUT10|ctr[17] ;
+; div:DUT9|ctr[17]                        ; Merged with div:DUT10|ctr[17] ;
+; div:DUT11|ctr[16]                       ; Merged with div:DUT10|ctr[16] ;
+; div:DUT12|ctr[16]                       ; Merged with div:DUT10|ctr[16] ;
+; div:DUT13|ctr[16]                       ; Merged with div:DUT10|ctr[16] ;
+; div:DUT14|ctr[16]                       ; Merged with div:DUT10|ctr[16] ;
+; div:DUT15|ctr[16]                       ; Merged with div:DUT10|ctr[16] ;
+; div:DUT16|ctr[16]                       ; Merged with div:DUT10|ctr[16] ;
+; div:DUT17|ctr[16]                       ; Merged with div:DUT10|ctr[16] ;
+; div:DUT18|ctr[16]                       ; Merged with div:DUT10|ctr[16] ;
+; div:DUT19|ctr[16]                       ; Merged with div:DUT10|ctr[16] ;
+; div:DUT1|ctr[16]                        ; Merged with div:DUT10|ctr[16] ;
+; div:DUT20|ctr[16]                       ; Merged with div:DUT10|ctr[16] ;
+; div:DUT2|ctr[16]                        ; Merged with div:DUT10|ctr[16] ;
+; div:DUT3|ctr[16]                        ; Merged with div:DUT10|ctr[16] ;
+; div:DUT4|ctr[16]                        ; Merged with div:DUT10|ctr[16] ;
+; div:DUT5|ctr[16]                        ; Merged with div:DUT10|ctr[16] ;
+; div:DUT6|ctr[16]                        ; Merged with div:DUT10|ctr[16] ;
+; div:DUT7|ctr[16]                        ; Merged with div:DUT10|ctr[16] ;
+; div:DUT8|ctr[16]                        ; Merged with div:DUT10|ctr[16] ;
+; div:DUT9|ctr[16]                        ; Merged with div:DUT10|ctr[16] ;
+; div:DUT11|ctr[15]                       ; Merged with div:DUT10|ctr[15] ;
+; div:DUT12|ctr[15]                       ; Merged with div:DUT10|ctr[15] ;
+; div:DUT13|ctr[15]                       ; Merged with div:DUT10|ctr[15] ;
+; div:DUT14|ctr[15]                       ; Merged with div:DUT10|ctr[15] ;
+; div:DUT15|ctr[15]                       ; Merged with div:DUT10|ctr[15] ;
+; div:DUT16|ctr[15]                       ; Merged with div:DUT10|ctr[15] ;
+; div:DUT17|ctr[15]                       ; Merged with div:DUT10|ctr[15] ;
+; div:DUT18|ctr[15]                       ; Merged with div:DUT10|ctr[15] ;
+; div:DUT19|ctr[15]                       ; Merged with div:DUT10|ctr[15] ;
+; div:DUT1|ctr[15]                        ; Merged with div:DUT10|ctr[15] ;
+; div:DUT20|ctr[15]                       ; Merged with div:DUT10|ctr[15] ;
+; div:DUT2|ctr[15]                        ; Merged with div:DUT10|ctr[15] ;
+; div:DUT3|ctr[15]                        ; Merged with div:DUT10|ctr[15] ;
+; div:DUT4|ctr[15]                        ; Merged with div:DUT10|ctr[15] ;
+; div:DUT5|ctr[15]                        ; Merged with div:DUT10|ctr[15] ;
+; div:DUT6|ctr[15]                        ; Merged with div:DUT10|ctr[15] ;
+; div:DUT7|ctr[15]                        ; Merged with div:DUT10|ctr[15] ;
+; div:DUT8|ctr[15]                        ; Merged with div:DUT10|ctr[15] ;
+; div:DUT9|ctr[15]                        ; Merged with div:DUT10|ctr[15] ;
+; div:DUT11|ctr[14]                       ; Merged with div:DUT10|ctr[14] ;
+; div:DUT12|ctr[14]                       ; Merged with div:DUT10|ctr[14] ;
+; div:DUT13|ctr[14]                       ; Merged with div:DUT10|ctr[14] ;
+; div:DUT14|ctr[14]                       ; Merged with div:DUT10|ctr[14] ;
+; div:DUT15|ctr[14]                       ; Merged with div:DUT10|ctr[14] ;
+; div:DUT16|ctr[14]                       ; Merged with div:DUT10|ctr[14] ;
+; div:DUT17|ctr[14]                       ; Merged with div:DUT10|ctr[14] ;
+; div:DUT18|ctr[14]                       ; Merged with div:DUT10|ctr[14] ;
+; div:DUT19|ctr[14]                       ; Merged with div:DUT10|ctr[14] ;
+; div:DUT1|ctr[14]                        ; Merged with div:DUT10|ctr[14] ;
+; div:DUT20|ctr[14]                       ; Merged with div:DUT10|ctr[14] ;
+; div:DUT2|ctr[14]                        ; Merged with div:DUT10|ctr[14] ;
+; div:DUT3|ctr[14]                        ; Merged with div:DUT10|ctr[14] ;
+; div:DUT4|ctr[14]                        ; Merged with div:DUT10|ctr[14] ;
+; div:DUT5|ctr[14]                        ; Merged with div:DUT10|ctr[14] ;
+; div:DUT6|ctr[14]                        ; Merged with div:DUT10|ctr[14] ;
+; div:DUT7|ctr[14]                        ; Merged with div:DUT10|ctr[14] ;
+; div:DUT8|ctr[14]                        ; Merged with div:DUT10|ctr[14] ;
+; div:DUT9|ctr[14]                        ; Merged with div:DUT10|ctr[14] ;
+; div:DUT11|ctr[13]                       ; Merged with div:DUT10|ctr[13] ;
+; div:DUT12|ctr[13]                       ; Merged with div:DUT10|ctr[13] ;
+; div:DUT13|ctr[13]                       ; Merged with div:DUT10|ctr[13] ;
+; div:DUT14|ctr[13]                       ; Merged with div:DUT10|ctr[13] ;
+; div:DUT15|ctr[13]                       ; Merged with div:DUT10|ctr[13] ;
+; div:DUT16|ctr[13]                       ; Merged with div:DUT10|ctr[13] ;
+; div:DUT17|ctr[13]                       ; Merged with div:DUT10|ctr[13] ;
+; div:DUT18|ctr[13]                       ; Merged with div:DUT10|ctr[13] ;
+; div:DUT19|ctr[13]                       ; Merged with div:DUT10|ctr[13] ;
+; div:DUT1|ctr[13]                        ; Merged with div:DUT10|ctr[13] ;
+; div:DUT20|ctr[13]                       ; Merged with div:DUT10|ctr[13] ;
+; div:DUT2|ctr[13]                        ; Merged with div:DUT10|ctr[13] ;
+; div:DUT3|ctr[13]                        ; Merged with div:DUT10|ctr[13] ;
+; div:DUT4|ctr[13]                        ; Merged with div:DUT10|ctr[13] ;
+; div:DUT5|ctr[13]                        ; Merged with div:DUT10|ctr[13] ;
+; div:DUT6|ctr[13]                        ; Merged with div:DUT10|ctr[13] ;
+; div:DUT7|ctr[13]                        ; Merged with div:DUT10|ctr[13] ;
+; div:DUT8|ctr[13]                        ; Merged with div:DUT10|ctr[13] ;
+; div:DUT9|ctr[13]                        ; Merged with div:DUT10|ctr[13] ;
+; div:DUT11|ctr[12]                       ; Merged with div:DUT10|ctr[12] ;
+; div:DUT12|ctr[12]                       ; Merged with div:DUT10|ctr[12] ;
+; div:DUT13|ctr[12]                       ; Merged with div:DUT10|ctr[12] ;
+; div:DUT14|ctr[12]                       ; Merged with div:DUT10|ctr[12] ;
+; div:DUT15|ctr[12]                       ; Merged with div:DUT10|ctr[12] ;
+; div:DUT16|ctr[12]                       ; Merged with div:DUT10|ctr[12] ;
+; div:DUT17|ctr[12]                       ; Merged with div:DUT10|ctr[12] ;
+; div:DUT18|ctr[12]                       ; Merged with div:DUT10|ctr[12] ;
+; div:DUT19|ctr[12]                       ; Merged with div:DUT10|ctr[12] ;
+; div:DUT1|ctr[12]                        ; Merged with div:DUT10|ctr[12] ;
+; div:DUT20|ctr[12]                       ; Merged with div:DUT10|ctr[12] ;
+; div:DUT2|ctr[12]                        ; Merged with div:DUT10|ctr[12] ;
+; div:DUT3|ctr[12]                        ; Merged with div:DUT10|ctr[12] ;
+; div:DUT4|ctr[12]                        ; Merged with div:DUT10|ctr[12] ;
+; div:DUT5|ctr[12]                        ; Merged with div:DUT10|ctr[12] ;
+; div:DUT6|ctr[12]                        ; Merged with div:DUT10|ctr[12] ;
+; div:DUT7|ctr[12]                        ; Merged with div:DUT10|ctr[12] ;
+; div:DUT8|ctr[12]                        ; Merged with div:DUT10|ctr[12] ;
+; div:DUT9|ctr[12]                        ; Merged with div:DUT10|ctr[12] ;
+; div:DUT11|ctr[11]                       ; Merged with div:DUT10|ctr[11] ;
+; div:DUT12|ctr[11]                       ; Merged with div:DUT10|ctr[11] ;
+; div:DUT13|ctr[11]                       ; Merged with div:DUT10|ctr[11] ;
+; div:DUT14|ctr[11]                       ; Merged with div:DUT10|ctr[11] ;
+; div:DUT15|ctr[11]                       ; Merged with div:DUT10|ctr[11] ;
+; div:DUT16|ctr[11]                       ; Merged with div:DUT10|ctr[11] ;
+; div:DUT17|ctr[11]                       ; Merged with div:DUT10|ctr[11] ;
+; div:DUT18|ctr[11]                       ; Merged with div:DUT10|ctr[11] ;
+; div:DUT19|ctr[11]                       ; Merged with div:DUT10|ctr[11] ;
+; div:DUT1|ctr[11]                        ; Merged with div:DUT10|ctr[11] ;
+; div:DUT20|ctr[11]                       ; Merged with div:DUT10|ctr[11] ;
+; div:DUT2|ctr[11]                        ; Merged with div:DUT10|ctr[11] ;
+; div:DUT3|ctr[11]                        ; Merged with div:DUT10|ctr[11] ;
+; div:DUT4|ctr[11]                        ; Merged with div:DUT10|ctr[11] ;
+; div:DUT5|ctr[11]                        ; Merged with div:DUT10|ctr[11] ;
+; div:DUT6|ctr[11]                        ; Merged with div:DUT10|ctr[11] ;
+; div:DUT7|ctr[11]                        ; Merged with div:DUT10|ctr[11] ;
+; div:DUT8|ctr[11]                        ; Merged with div:DUT10|ctr[11] ;
+; div:DUT9|ctr[11]                        ; Merged with div:DUT10|ctr[11] ;
+; div:DUT11|ctr[10]                       ; Merged with div:DUT10|ctr[10] ;
+; div:DUT12|ctr[10]                       ; Merged with div:DUT10|ctr[10] ;
+; div:DUT13|ctr[10]                       ; Merged with div:DUT10|ctr[10] ;
+; div:DUT14|ctr[10]                       ; Merged with div:DUT10|ctr[10] ;
+; div:DUT15|ctr[10]                       ; Merged with div:DUT10|ctr[10] ;
+; div:DUT16|ctr[10]                       ; Merged with div:DUT10|ctr[10] ;
+; div:DUT17|ctr[10]                       ; Merged with div:DUT10|ctr[10] ;
+; div:DUT18|ctr[10]                       ; Merged with div:DUT10|ctr[10] ;
+; div:DUT19|ctr[10]                       ; Merged with div:DUT10|ctr[10] ;
+; div:DUT1|ctr[10]                        ; Merged with div:DUT10|ctr[10] ;
+; div:DUT20|ctr[10]                       ; Merged with div:DUT10|ctr[10] ;
+; div:DUT2|ctr[10]                        ; Merged with div:DUT10|ctr[10] ;
+; div:DUT3|ctr[10]                        ; Merged with div:DUT10|ctr[10] ;
+; div:DUT4|ctr[10]                        ; Merged with div:DUT10|ctr[10] ;
+; div:DUT5|ctr[10]                        ; Merged with div:DUT10|ctr[10] ;
+; div:DUT6|ctr[10]                        ; Merged with div:DUT10|ctr[10] ;
+; div:DUT7|ctr[10]                        ; Merged with div:DUT10|ctr[10] ;
+; div:DUT8|ctr[10]                        ; Merged with div:DUT10|ctr[10] ;
+; div:DUT9|ctr[10]                        ; Merged with div:DUT10|ctr[10] ;
+; div:DUT11|ctr[9]                        ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT12|ctr[9]                        ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT13|ctr[9]                        ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT14|ctr[9]                        ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT15|ctr[9]                        ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT16|ctr[9]                        ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT17|ctr[9]                        ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT18|ctr[9]                        ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT19|ctr[9]                        ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT1|ctr[9]                         ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT20|ctr[9]                        ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT2|ctr[9]                         ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT3|ctr[9]                         ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT4|ctr[9]                         ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT5|ctr[9]                         ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT6|ctr[9]                         ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT7|ctr[9]                         ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT8|ctr[9]                         ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT9|ctr[9]                         ; Merged with div:DUT10|ctr[9]  ;
+; div:DUT11|ctr[8]                        ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT12|ctr[8]                        ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT13|ctr[8]                        ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT14|ctr[8]                        ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT15|ctr[8]                        ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT16|ctr[8]                        ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT17|ctr[8]                        ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT18|ctr[8]                        ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT19|ctr[8]                        ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT1|ctr[8]                         ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT20|ctr[8]                        ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT2|ctr[8]                         ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT3|ctr[8]                         ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT4|ctr[8]                         ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT5|ctr[8]                         ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT6|ctr[8]                         ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT7|ctr[8]                         ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT8|ctr[8]                         ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT9|ctr[8]                         ; Merged with div:DUT10|ctr[8]  ;
+; div:DUT11|ctr[7]                        ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT12|ctr[7]                        ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT13|ctr[7]                        ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT14|ctr[7]                        ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT15|ctr[7]                        ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT16|ctr[7]                        ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT17|ctr[7]                        ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT18|ctr[7]                        ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT19|ctr[7]                        ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT1|ctr[7]                         ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT20|ctr[7]                        ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT2|ctr[7]                         ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT3|ctr[7]                         ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT4|ctr[7]                         ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT5|ctr[7]                         ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT6|ctr[7]                         ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT7|ctr[7]                         ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT8|ctr[7]                         ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT9|ctr[7]                         ; Merged with div:DUT10|ctr[7]  ;
+; div:DUT11|ctr[6]                        ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT12|ctr[6]                        ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT13|ctr[6]                        ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT14|ctr[6]                        ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT15|ctr[6]                        ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT16|ctr[6]                        ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT17|ctr[6]                        ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT18|ctr[6]                        ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT19|ctr[6]                        ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT1|ctr[6]                         ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT20|ctr[6]                        ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT2|ctr[6]                         ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT3|ctr[6]                         ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT4|ctr[6]                         ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT5|ctr[6]                         ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT6|ctr[6]                         ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT7|ctr[6]                         ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT8|ctr[6]                         ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT9|ctr[6]                         ; Merged with div:DUT10|ctr[6]  ;
+; div:DUT11|ctr[5]                        ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT12|ctr[5]                        ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT13|ctr[5]                        ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT14|ctr[5]                        ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT15|ctr[5]                        ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT16|ctr[5]                        ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT17|ctr[5]                        ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT18|ctr[5]                        ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT19|ctr[5]                        ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT1|ctr[5]                         ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT20|ctr[5]                        ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT2|ctr[5]                         ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT3|ctr[5]                         ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT4|ctr[5]                         ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT5|ctr[5]                         ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT6|ctr[5]                         ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT7|ctr[5]                         ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT8|ctr[5]                         ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT9|ctr[5]                         ; Merged with div:DUT10|ctr[5]  ;
+; div:DUT11|ctr[4]                        ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT12|ctr[4]                        ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT13|ctr[4]                        ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT14|ctr[4]                        ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT15|ctr[4]                        ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT16|ctr[4]                        ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT17|ctr[4]                        ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT18|ctr[4]                        ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT19|ctr[4]                        ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT1|ctr[4]                         ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT20|ctr[4]                        ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT2|ctr[4]                         ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT3|ctr[4]                         ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT4|ctr[4]                         ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT5|ctr[4]                         ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT6|ctr[4]                         ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT7|ctr[4]                         ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT8|ctr[4]                         ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT9|ctr[4]                         ; Merged with div:DUT10|ctr[4]  ;
+; div:DUT11|ctr[3]                        ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT12|ctr[3]                        ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT13|ctr[3]                        ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT14|ctr[3]                        ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT15|ctr[3]                        ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT16|ctr[3]                        ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT17|ctr[3]                        ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT18|ctr[3]                        ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT19|ctr[3]                        ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT1|ctr[3]                         ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT20|ctr[3]                        ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT2|ctr[3]                         ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT3|ctr[3]                         ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT4|ctr[3]                         ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT5|ctr[3]                         ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT6|ctr[3]                         ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT7|ctr[3]                         ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT8|ctr[3]                         ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT9|ctr[3]                         ; Merged with div:DUT10|ctr[3]  ;
+; div:DUT11|ctr[2]                        ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT12|ctr[2]                        ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT13|ctr[2]                        ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT14|ctr[2]                        ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT15|ctr[2]                        ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT16|ctr[2]                        ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT17|ctr[2]                        ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT18|ctr[2]                        ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT19|ctr[2]                        ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT1|ctr[2]                         ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT20|ctr[2]                        ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT2|ctr[2]                         ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT3|ctr[2]                         ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT4|ctr[2]                         ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT5|ctr[2]                         ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT6|ctr[2]                         ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT7|ctr[2]                         ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT8|ctr[2]                         ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT9|ctr[2]                         ; Merged with div:DUT10|ctr[2]  ;
+; div:DUT11|ctr[1]                        ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT12|ctr[1]                        ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT13|ctr[1]                        ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT14|ctr[1]                        ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT15|ctr[1]                        ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT16|ctr[1]                        ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT17|ctr[1]                        ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT18|ctr[1]                        ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT19|ctr[1]                        ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT1|ctr[1]                         ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT20|ctr[1]                        ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT2|ctr[1]                         ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT3|ctr[1]                         ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT4|ctr[1]                         ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT5|ctr[1]                         ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT6|ctr[1]                         ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT7|ctr[1]                         ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT8|ctr[1]                         ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT9|ctr[1]                         ; Merged with div:DUT10|ctr[1]  ;
+; div:DUT11|ctr[0]                        ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT12|ctr[0]                        ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT13|ctr[0]                        ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT14|ctr[0]                        ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT15|ctr[0]                        ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT16|ctr[0]                        ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT17|ctr[0]                        ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT18|ctr[0]                        ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT19|ctr[0]                        ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT1|ctr[0]                         ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT20|ctr[0]                        ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT2|ctr[0]                         ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT3|ctr[0]                         ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT4|ctr[0]                         ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT5|ctr[0]                         ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT6|ctr[0]                         ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT7|ctr[0]                         ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT8|ctr[0]                         ; Merged with div:DUT10|ctr[0]  ;
+; div:DUT9|ctr[0]                         ; Merged with div:DUT10|ctr[0]  ;
+; Total Number of Removed Registers = 633 ;                               ;
++-----------------------------------------+-------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 39    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |num1|ctr[5]               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT1 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; C              ; 25000 ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT2 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; C              ; 12500 ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT3 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; C              ; 8333  ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT4 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; C              ; 6250  ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT5 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; C              ; 5000  ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT6 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; C              ; 4166  ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT7 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; C              ; 3571  ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT8 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; C              ; 3125  ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT9 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; C              ; 2777  ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT10 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 2500  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT11 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 2272  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT12 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 2083  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT13 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 1923  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT14 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 1785  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT15 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 1666  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT16 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 1562  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT17 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 1470  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT18 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 1388  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT19 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 1315  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:DUT20 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; C              ; 1250  ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 5                           ;
+; cycloneiii_ff         ; 39                          ;
+;     CLR               ; 33                          ;
+;     plain             ; 6                           ;
+; cycloneiii_io_obuf    ; 1                           ;
+; cycloneiii_lcell_comb ; 151                         ;
+;     arith             ; 36                          ;
+;         2 data inputs ; 31                          ;
+;         3 data inputs ; 5                           ;
+;     normal            ; 115                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 92                          ;
+;                       ;                             ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 5.94                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu Nov 09 21:41:37 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 3_lab -c 3_lab
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file num2.sv
+    Info (12023): Found entity 1: num2 File: E:/3 lab/num2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file num1.sv
+    Info (12023): Found entity 1: num1 File: E:/3 lab/num1.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file div.sv
+    Info (12023): Found entity 1: div File: E:/3 lab/div.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file reg9.sv
+    Info (12023): Found entity 1: reg9 File: E:/3 lab/reg9.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file del_par.sv
+    Info (12023): Found entity 1: Del_par File: E:/3 lab/Del_par.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file schet10.sv
+    Info (12023): Found entity 1: schet10 File: E:/3 lab/schet10.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top.sv
+    Info (12023): Found entity 1: top File: E:/3 lab/top.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file schet10_par.sv
+    Info (12023): Found entity 1: schet10_par File: E:/3 lab/schet10_par.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top2.sv
+    Info (12023): Found entity 1: top2 File: E:/3 lab/top2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file del_50_mgz.sv
+    Info (12023): Found entity 1: Del_50_MGz File: E:/3 lab/Del_50_MGz.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file reg_cir_par.sv
+    Info (12023): Found entity 1: reg_cir_par File: E:/3 lab/reg_cir_par.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file detector.sv
+    Info (12023): Found entity 1: detector File: E:/3 lab/detector.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sch_par.sv
+    Info (12023): Found entity 1: sch_par File: E:/3 lab/sch_par.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file reg20.sv
+    Info (12023): Found entity 1: reg20 File: E:/3 lab/reg20.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pwd.sv
+    Info (12023): Found entity 1: pwd File: E:/3 lab/pwd.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file debounce.sv
+    Info (12023): Found entity 1: debounce File: E:/3 lab/debounce.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bell.sv
+    Info (12023): Found entity 1: bell File: E:/3 lab/bell.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file del_par2.sv
+    Info (12023): Found entity 1: Del_par2 File: E:/3 lab/Del_par2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fpga_bell.sv
+    Info (12023): Found entity 1: FPGA_bell File: E:/3 lab/FPGA_bell.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fpga_pwd.sv
+    Info (12023): Found entity 1: FPGA_pwd File: E:/3 lab/FPGA_pwd.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file hw_lab3_bell3.sv
+    Info (12023): Found entity 1: hw_lab3_bell3 File: E:/3 lab/hw_lab3_bell3.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file del_par3.sv
+    Info (12023): Found entity 1: Del_par3 File: E:/3 lab/Del_par3.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lfsr_fib.sv
+    Info (12023): Found entity 1: lfsr_fib File: E:/3 lab/lfsr_fib.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lfsr_gal.sv
+    Info (12023): Found entity 1: lfsr_gal File: E:/3 lab/lfsr_gal.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/tb_lab3_9.sv
+    Info (12023): Found entity 1: tb_lab3_9 File: E:/3 lab/output_files/tb_lab3_9.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/tb_lab3_10.sv
+    Info (12023): Found entity 1: tb_lab3_10 File: E:/3 lab/output_files/tb_lab3_10.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at tb_lab3_9.sv(5): created implicit net for "outPRS" File: E:/3 lab/output_files/tb_lab3_9.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at tb_lab3_10.sv(5): created implicit net for "outPRS" File: E:/3 lab/output_files/tb_lab3_10.sv Line: 5
+Info (12127): Elaborating entity "num1" for the top level hierarchy
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT1" File: E:/3 lab/num1.sv Line: 8
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT2" File: E:/3 lab/num1.sv Line: 9
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT3" File: E:/3 lab/num1.sv Line: 10
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT4" File: E:/3 lab/num1.sv Line: 11
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT5" File: E:/3 lab/num1.sv Line: 12
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT6" File: E:/3 lab/num1.sv Line: 13
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT7" File: E:/3 lab/num1.sv Line: 14
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT8" File: E:/3 lab/num1.sv Line: 15
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT9" File: E:/3 lab/num1.sv Line: 16
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT10" File: E:/3 lab/num1.sv Line: 17
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT11" File: E:/3 lab/num1.sv Line: 18
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT12" File: E:/3 lab/num1.sv Line: 19
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT13" File: E:/3 lab/num1.sv Line: 20
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT14" File: E:/3 lab/num1.sv Line: 21
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT15" File: E:/3 lab/num1.sv Line: 22
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT16" File: E:/3 lab/num1.sv Line: 23
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT17" File: E:/3 lab/num1.sv Line: 24
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT18" File: E:/3 lab/num1.sv Line: 25
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT19" File: E:/3 lab/num1.sv Line: 26
+Info (12128): Elaborating entity "div" for hierarchy "div:DUT20" File: E:/3 lab/num1.sv Line: 27
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "ctr[0]~0" feeding internal logic into a wire File: E:/3 lab/num1.sv Line: 33
+    Warning (13049): Converted tri-state buffer "ctr[1]~1" feeding internal logic into a wire File: E:/3 lab/num1.sv Line: 33
+    Warning (13049): Converted tri-state buffer "ctr[2]~2" feeding internal logic into a wire File: E:/3 lab/num1.sv Line: 33
+    Warning (13049): Converted tri-state buffer "ctr[3]~3" feeding internal logic into a wire File: E:/3 lab/num1.sv Line: 33
+    Warning (13049): Converted tri-state buffer "ctr[4]~4" feeding internal logic into a wire File: E:/3 lab/num1.sv Line: 33
+    Warning (13049): Converted tri-state buffer "ctr[5]~5" feeding internal logic into a wire File: E:/3 lab/num1.sv Line: 33
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 156 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 151 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Thu Nov 09 21:41:46 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
+
+

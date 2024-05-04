@@ -1,0 +1,115 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/lr4/lab4/simulation/modelsim
+vmealy
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1701014107
+!i10b 1
+!s100 8R3TIh7CakYSKn]`@7A[R0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IzGS>3;l=75ISdRBkkW>_92
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1701011599
+8E:/lr4/lab4/src/mealy.sv
+FE:/lr4/lab4/src/mealy.sv
+!i122 2
+Z5 L0 1 29
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1701014107.000000
+!s107 E:/lr4/lab4/src/mealy.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lr4/lab4/src|E:/lr4/lab4/src/mealy.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+E:/lr4/lab4/src
+Z10 tCvgOpt 0
+vmoore
+R1
+R2
+!i10b 1
+!s100 B<5lgaKKeC>9c9;E1JNbe0
+R3
+ImK`X`=[2HgigPIR0B0<g51
+R4
+S1
+R0
+w1701011596
+8E:/lr4/lab4/src/moore.sv
+FE:/lr4/lab4/src/moore.sv
+!i122 1
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/lr4/lab4/src/moore.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lr4/lab4/src|E:/lr4/lab4/src/moore.sv|
+!i113 1
+R8
+R9
+R10
+vtb_state
+R1
+R2
+!i10b 1
+!s100 H71>KXzLhRNbLHcjmfHI12
+R3
+I8JR;DL0^QFZA@7AcDoCT22
+R4
+S1
+R0
+w1701011598
+8E:/lr4/lab4/src/tb_state.sv
+FE:/lr4/lab4/src/tb_state.sv
+!i122 3
+L0 3 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/lr4/lab4/src/tb_state.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lr4/lab4/src|E:/lr4/lab4/src/tb_state.sv|
+!i113 1
+R8
+R9
+R10
+vtop_state
+R1
+R2
+!i10b 1
+!s100 VKP<We<i]N;?PF=i18Kzb0
+R3
+Ii118MbWZcF9D2EoL`@meR0
+R4
+S1
+R0
+w1701011595
+8E:/lr4/lab4/src/top_state.sv
+FE:/lr4/lab4/src/top_state.sv
+!i122 0
+L0 1 9
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/lr4/lab4/src/top_state.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lr4/lab4/src|E:/lr4/lab4/src/top_state.sv|
+!i113 1
+R8
+R9
+R10

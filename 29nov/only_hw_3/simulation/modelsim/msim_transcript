@@ -1,0 +1,152 @@
+# do only_hw_3_lab_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/k-105-03/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/lfsr_fibonacci_param.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/lfsr_fibonacci_param.sv 
+# -- Compiling module lfsr_fibonacci_param
+# 
+# Top level modules:
+# 	lfsr_fibonacci_param
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/mux_2to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/mux_2to1.sv 
+# -- Compiling module mux_2to1
+# 
+# Top level modules:
+# 	mux_2to1
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/top_lfsr_5.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/top_lfsr_5.sv 
+# -- Compiling module top_lfsr_5
+# 
+# Top level modules:
+# 	top_lfsr_5
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/gen_neperek.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/gen_neperek.sv 
+# -- Compiling module gen_neperek
+# 
+# Top level modules:
+# 	gen_neperek
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/gen_perek.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/gen_perek.sv 
+# -- Compiling module gen_perek
+# 
+# Top level modules:
+# 	gen_perek
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/mealy_perek.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/mealy_perek.sv 
+# -- Compiling module mealy_perek
+# 
+# Top level modules:
+# 	mealy_perek
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/mealy_neperek.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/mealy_neperek.sv 
+# -- Compiling module mealy_neperek
+# 
+# Top level modules:
+# 	mealy_neperek
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/moore_neperek.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/moore_neperek.sv 
+# -- Compiling module moore_neperek
+# 
+# Top level modules:
+# 	moore_neperek
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/moore_perek.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/moore_perek.sv 
+# -- Compiling module moore_perek
+# 
+# Top level modules:
+# 	moore_perek
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/HighestGenTop.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/HighestGenTop.sv 
+# -- Compiling module HighestGenTop
+# 
+# Top level modules:
+# 	HighestGenTop
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+/home/k-105-03/workspace/29nov/only_hw_3/src {/home/k-105-03/workspace/29nov/only_hw_3/src/tb_highest_top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:01:47 on Nov 29,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/k-105-03/workspace/29nov/only_hw_3/src" /home/k-105-03/workspace/29nov/only_hw_3/src/tb_highest_top.sv 
+# -- Compiling module tb_highest_top
+# 
+# Top level modules:
+# 	tb_highest_top
+# End time: 14:01:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_highest_top
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_highest_top 
+# Start time: 14:01:47 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.tb_highest_top
+# Loading work.HighestGenTop
+# Loading work.gen_neperek
+# Loading work.top_lfsr_5
+# Loading work.lfsr_fibonacci_param
+# Loading work.mux_2to1
+# Loading work.moore_neperek
+# Loading work.mealy_neperek
+# Loading work.gen_perek
+# Loading work.moore_perek
+# Loading work.mealy_perek
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : /home/k-105-03/workspace/29nov/only_hw_3/src/tb_highest_top.sv(46)
+#    Time: 400 us  Iteration: 0  Instance: /tb_highest_top
+# Break in Module tb_highest_top at /home/k-105-03/workspace/29nov/only_hw_3/src/tb_highest_top.sv line 46
+# 
+# stdin: <EOF>
+# End time: 14:02:44 on Nov 29,2023, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 0

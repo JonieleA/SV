@@ -1,0 +1,11 @@
+module mealy (clk, res_n, D, F);
+
+input logic clk, res_n, D;
+output logic F;
+
+always @(posedge clk or negedge rest_n) begin
+	if (!res_n) begin
+	state <= 0;
+	F <= 0;
+	end
+end

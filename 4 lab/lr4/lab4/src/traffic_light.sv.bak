@@ -1,0 +1,10 @@
+module traffic_light ();
+
+input logic
+output logic
+
+always_ff @(posedge clk or negedge res_n) begin
+
+end
+
+endmodule

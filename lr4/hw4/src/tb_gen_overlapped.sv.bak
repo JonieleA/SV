@@ -1,0 +1,37 @@
+module tb_gen_overlapped;
+
+logic 		 clk, res_n;
+logic [15:0] D1, D2, D3;
+logic				  F0, F1;
+
+LFSR_gen DUT(.clk( clk ), .res_n( res_n ), .D1( D1 ),
+				 .D2( D2 ), .D3( D3 ), .F( F ));
+
+always
+	#5 clk = ~clk;
+
+initial begin
+	clk = 1;
+	res_n = 1;
+	D1 = 16'hA2C1;
+	D2 = 16'hF047;
+	D3 = 16'h3BE0;
+end
+
+initial
+	#20 repeat(2) #5 res_n = ~res_n;
+
+initial
+	data = $fopen("Sequence_gen.txt", "a");
+
+always @(posedge clk)
+	$fwrite(data, "%b", F);
+
+	
+initial begin
+  repeat(10002) @(posedge clk);
+  $fclose(data);
+  $stop;
+end
+
+endmodule

@@ -1,0 +1,323 @@
+|HighestGenTop
+clk => clk.IN2
+nres => nres.IN2
+OUTP_MOORE_NEPEREK << gen_neperek:DUT_gen_neperek.OUTP_MOORE_NEPEREK
+OUTP_MEALY_NEPEREK << gen_neperek:DUT_gen_neperek.OUTP_MEALY_NEPEREK
+OUTP_MOORE_PEREK << gen_perek:DUT_gen_perek.OUTP_MOORE_PEREK
+OUTP_MEALY_PEREK << gen_perek:DUT_gen_perek.OUTP_MEALY_PEREK
+
+
+|HighestGenTop|gen_neperek:DUT_gen_neperek
+clk => clk.IN3
+nres => nres.IN3
+OUTP_MOORE_NEPEREK <= moore_neperek:DutMooreNeperek.OUTP
+OUTP_MEALY_NEPEREK <= mealy_neperek:DutMealyNeperek.OUTP
+
+
+|HighestGenTop|gen_neperek:DUT_gen_neperek|top_lfsr_5:DutGenNeperek
+clkTop => clkTop.IN3
+nrstTop => nrstTop.IN3
+MUX_out <= mux_2to1:dut_mux.Y
+
+
+|HighestGenTop|gen_neperek:DUT_gen_neperek|top_lfsr_5:DutGenNeperek|lfsr_fibonacci_param:dut_fib_1
+clk => lfsr_reg[15].CLK
+clk => lfsr_reg[14].CLK
+clk => lfsr_reg[13].CLK
+clk => lfsr_reg[12].CLK
+clk => lfsr_reg[11].CLK
+clk => lfsr_reg[10].CLK
+clk => lfsr_reg[9].CLK
+clk => lfsr_reg[8].CLK
+clk => lfsr_reg[7].CLK
+clk => lfsr_reg[6].CLK
+clk => lfsr_reg[5].CLK
+clk => lfsr_reg[4].CLK
+clk => lfsr_reg[3].CLK
+clk => lfsr_reg[2].CLK
+clk => lfsr_reg[1].CLK
+clk => lfsr_reg[0].CLK
+nrst => lfsr_reg[15].PRESET
+nrst => lfsr_reg[14].ACLR
+nrst => lfsr_reg[13].ACLR
+nrst => lfsr_reg[12].ACLR
+nrst => lfsr_reg[11].ACLR
+nrst => lfsr_reg[10].ACLR
+nrst => lfsr_reg[9].PRESET
+nrst => lfsr_reg[8].PRESET
+nrst => lfsr_reg[7].PRESET
+nrst => lfsr_reg[6].ACLR
+nrst => lfsr_reg[5].ACLR
+nrst => lfsr_reg[4].ACLR
+nrst => lfsr_reg[3].ACLR
+nrst => lfsr_reg[2].PRESET
+nrst => lfsr_reg[1].ACLR
+nrst => lfsr_reg[0].PRESET
+lfsr_out <= lfsr_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_neperek:DUT_gen_neperek|top_lfsr_5:DutGenNeperek|lfsr_fibonacci_param:dut_fib_2
+clk => lfsr_reg[15].CLK
+clk => lfsr_reg[14].CLK
+clk => lfsr_reg[13].CLK
+clk => lfsr_reg[12].CLK
+clk => lfsr_reg[11].CLK
+clk => lfsr_reg[10].CLK
+clk => lfsr_reg[9].CLK
+clk => lfsr_reg[8].CLK
+clk => lfsr_reg[7].CLK
+clk => lfsr_reg[6].CLK
+clk => lfsr_reg[5].CLK
+clk => lfsr_reg[4].CLK
+clk => lfsr_reg[3].CLK
+clk => lfsr_reg[2].CLK
+clk => lfsr_reg[1].CLK
+clk => lfsr_reg[0].CLK
+nrst => lfsr_reg[15].ACLR
+nrst => lfsr_reg[14].PRESET
+nrst => lfsr_reg[13].ACLR
+nrst => lfsr_reg[12].ACLR
+nrst => lfsr_reg[11].ACLR
+nrst => lfsr_reg[10].ACLR
+nrst => lfsr_reg[9].PRESET
+nrst => lfsr_reg[8].PRESET
+nrst => lfsr_reg[7].ACLR
+nrst => lfsr_reg[6].PRESET
+nrst => lfsr_reg[5].ACLR
+nrst => lfsr_reg[4].ACLR
+nrst => lfsr_reg[3].ACLR
+nrst => lfsr_reg[2].PRESET
+nrst => lfsr_reg[1].ACLR
+nrst => lfsr_reg[0].PRESET
+lfsr_out <= lfsr_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_neperek:DUT_gen_neperek|top_lfsr_5:DutGenNeperek|lfsr_fibonacci_param:dut_fib_3
+clk => lfsr_reg[15].CLK
+clk => lfsr_reg[14].CLK
+clk => lfsr_reg[13].CLK
+clk => lfsr_reg[12].CLK
+clk => lfsr_reg[11].CLK
+clk => lfsr_reg[10].CLK
+clk => lfsr_reg[9].CLK
+clk => lfsr_reg[8].CLK
+clk => lfsr_reg[7].CLK
+clk => lfsr_reg[6].CLK
+clk => lfsr_reg[5].CLK
+clk => lfsr_reg[4].CLK
+clk => lfsr_reg[3].CLK
+clk => lfsr_reg[2].CLK
+clk => lfsr_reg[1].CLK
+clk => lfsr_reg[0].CLK
+nrst => lfsr_reg[15].ACLR
+nrst => lfsr_reg[14].PRESET
+nrst => lfsr_reg[13].ACLR
+nrst => lfsr_reg[12].ACLR
+nrst => lfsr_reg[11].ACLR
+nrst => lfsr_reg[10].ACLR
+nrst => lfsr_reg[9].PRESET
+nrst => lfsr_reg[8].PRESET
+nrst => lfsr_reg[7].PRESET
+nrst => lfsr_reg[6].ACLR
+nrst => lfsr_reg[5].ACLR
+nrst => lfsr_reg[4].ACLR
+nrst => lfsr_reg[3].ACLR
+nrst => lfsr_reg[2].PRESET
+nrst => lfsr_reg[1].ACLR
+nrst => lfsr_reg[0].PRESET
+lfsr_out <= lfsr_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_neperek:DUT_gen_neperek|top_lfsr_5:DutGenNeperek|mux_2to1:dut_mux
+D0 => Y.DATAB
+D1 => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_neperek:DUT_gen_neperek|moore_neperek:DutMooreNeperek
+clk => state~1.DATAIN
+nres => state~3.DATAIN
+INP => nextstate.DIGIT_4.DATAB
+INP => Selector0.IN1
+INP => Selector1.IN1
+INP => nextstate.DIGIT_2.DATAB
+INP => nextstate.DIGIT_3.DATAB
+INP => nextstate.EN.DATAB
+INP => Selector0.IN0
+OUTP <= OUTP.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_neperek:DUT_gen_neperek|mealy_neperek:DutMealyNeperek
+clk => OUTP~reg0.CLK
+clk => state~1.DATAIN
+nres => OUTP~reg0.ACLR
+nres => state~3.DATAIN
+INP => Selector0.IN2
+INP => Selector0.IN3
+INP => Selector0.IN4
+INP => nextstate.DIG4.DATAB
+INP => checkTask.IN0
+INP => Selector0.IN1
+INP => nextstate.DIG1.DATAB
+INP => nextstate.DIG2.DATAB
+INP => nextstate.DIG3.DATAB
+OUTP <= OUTP~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_perek:DUT_gen_perek
+clk => clk.IN3
+nres => nres.IN3
+OUTP_MOORE_PEREK <= moore_perek:DutMoorePerek.OUTP
+OUTP_MEALY_PEREK <= mealy_perek:DutMealyPerek.OUTP
+
+
+|HighestGenTop|gen_perek:DUT_gen_perek|top_lfsr_5:DutGenPerek
+clkTop => clkTop.IN3
+nrstTop => nrstTop.IN3
+MUX_out <= mux_2to1:dut_mux.Y
+
+
+|HighestGenTop|gen_perek:DUT_gen_perek|top_lfsr_5:DutGenPerek|lfsr_fibonacci_param:dut_fib_1
+clk => lfsr_reg[15].CLK
+clk => lfsr_reg[14].CLK
+clk => lfsr_reg[13].CLK
+clk => lfsr_reg[12].CLK
+clk => lfsr_reg[11].CLK
+clk => lfsr_reg[10].CLK
+clk => lfsr_reg[9].CLK
+clk => lfsr_reg[8].CLK
+clk => lfsr_reg[7].CLK
+clk => lfsr_reg[6].CLK
+clk => lfsr_reg[5].CLK
+clk => lfsr_reg[4].CLK
+clk => lfsr_reg[3].CLK
+clk => lfsr_reg[2].CLK
+clk => lfsr_reg[1].CLK
+clk => lfsr_reg[0].CLK
+nrst => lfsr_reg[15].PRESET
+nrst => lfsr_reg[14].ACLR
+nrst => lfsr_reg[13].ACLR
+nrst => lfsr_reg[12].ACLR
+nrst => lfsr_reg[11].ACLR
+nrst => lfsr_reg[10].ACLR
+nrst => lfsr_reg[9].PRESET
+nrst => lfsr_reg[8].PRESET
+nrst => lfsr_reg[7].PRESET
+nrst => lfsr_reg[6].ACLR
+nrst => lfsr_reg[5].ACLR
+nrst => lfsr_reg[4].ACLR
+nrst => lfsr_reg[3].ACLR
+nrst => lfsr_reg[2].PRESET
+nrst => lfsr_reg[1].ACLR
+nrst => lfsr_reg[0].PRESET
+lfsr_out <= lfsr_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_perek:DUT_gen_perek|top_lfsr_5:DutGenPerek|lfsr_fibonacci_param:dut_fib_2
+clk => lfsr_reg[15].CLK
+clk => lfsr_reg[14].CLK
+clk => lfsr_reg[13].CLK
+clk => lfsr_reg[12].CLK
+clk => lfsr_reg[11].CLK
+clk => lfsr_reg[10].CLK
+clk => lfsr_reg[9].CLK
+clk => lfsr_reg[8].CLK
+clk => lfsr_reg[7].CLK
+clk => lfsr_reg[6].CLK
+clk => lfsr_reg[5].CLK
+clk => lfsr_reg[4].CLK
+clk => lfsr_reg[3].CLK
+clk => lfsr_reg[2].CLK
+clk => lfsr_reg[1].CLK
+clk => lfsr_reg[0].CLK
+nrst => lfsr_reg[15].ACLR
+nrst => lfsr_reg[14].PRESET
+nrst => lfsr_reg[13].ACLR
+nrst => lfsr_reg[12].ACLR
+nrst => lfsr_reg[11].ACLR
+nrst => lfsr_reg[10].ACLR
+nrst => lfsr_reg[9].PRESET
+nrst => lfsr_reg[8].PRESET
+nrst => lfsr_reg[7].ACLR
+nrst => lfsr_reg[6].PRESET
+nrst => lfsr_reg[5].ACLR
+nrst => lfsr_reg[4].ACLR
+nrst => lfsr_reg[3].ACLR
+nrst => lfsr_reg[2].PRESET
+nrst => lfsr_reg[1].ACLR
+nrst => lfsr_reg[0].PRESET
+lfsr_out <= lfsr_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_perek:DUT_gen_perek|top_lfsr_5:DutGenPerek|lfsr_fibonacci_param:dut_fib_3
+clk => lfsr_reg[15].CLK
+clk => lfsr_reg[14].CLK
+clk => lfsr_reg[13].CLK
+clk => lfsr_reg[12].CLK
+clk => lfsr_reg[11].CLK
+clk => lfsr_reg[10].CLK
+clk => lfsr_reg[9].CLK
+clk => lfsr_reg[8].CLK
+clk => lfsr_reg[7].CLK
+clk => lfsr_reg[6].CLK
+clk => lfsr_reg[5].CLK
+clk => lfsr_reg[4].CLK
+clk => lfsr_reg[3].CLK
+clk => lfsr_reg[2].CLK
+clk => lfsr_reg[1].CLK
+clk => lfsr_reg[0].CLK
+nrst => lfsr_reg[15].ACLR
+nrst => lfsr_reg[14].PRESET
+nrst => lfsr_reg[13].ACLR
+nrst => lfsr_reg[12].ACLR
+nrst => lfsr_reg[11].ACLR
+nrst => lfsr_reg[10].ACLR
+nrst => lfsr_reg[9].PRESET
+nrst => lfsr_reg[8].PRESET
+nrst => lfsr_reg[7].PRESET
+nrst => lfsr_reg[6].ACLR
+nrst => lfsr_reg[5].ACLR
+nrst => lfsr_reg[4].ACLR
+nrst => lfsr_reg[3].ACLR
+nrst => lfsr_reg[2].PRESET
+nrst => lfsr_reg[1].ACLR
+nrst => lfsr_reg[0].PRESET
+lfsr_out <= lfsr_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_perek:DUT_gen_perek|top_lfsr_5:DutGenPerek|mux_2to1:dut_mux
+D0 => Y.DATAB
+D1 => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_perek:DUT_gen_perek|moore_perek:DutMoorePerek
+clk => state~1.DATAIN
+nres => state~3.DATAIN
+INP => nextstate.DIG4.DATAB
+INP => Selector0.IN1
+INP => nextstate.DIG1.DATAB
+INP => Selector1.IN1
+INP => nextstate.DIG3.DATAB
+INP => nextstate.EN.DATAB
+INP => Selector0.IN0
+OUTP <= OUTP.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HighestGenTop|gen_perek:DUT_gen_perek|mealy_perek:DutMealyPerek
+clk => OUTP~reg0.CLK
+clk => state~1.DATAIN
+nres => OUTP~reg0.ACLR
+nres => state~3.DATAIN
+INP => nextstate.DIG4.DATAB
+INP => Selector0.IN1
+INP => checkTask.IN0
+INP => Selector0.IN0
+INP => Selector1.IN2
+INP => nextstate.DIG2.DATAB
+INP => nextstate.DIG3.DATAB
+OUTP <= OUTP~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

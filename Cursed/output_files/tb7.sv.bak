@@ -1,0 +1,41 @@
+`timescale 1ns/1ns
+
+module tb7;
+
+logic clk, priem, Reset_1, Reset_2, Reset_3, Reset_4, left_cursor, right_cursor, Delete, Enter;
+logic [7:0] inp, res;
+obrabotka obrabotka(inp, clk, priem, Reset_1, Reset_2, Reset_3, Reset_4, res, left_cursor, right_cursor, Delete, Enter);
+initial begin
+clk = 0;
+priem = 0;
+Reset_1 = 0;
+Reset_2 = 0;
+Reset_3 = 0;
+Reset_4 = 0;
+inp = 8'b11111111;
+#20 priem = 1;
+#1 preim = 0;
+inp = 8'b00011011;
+#20 priem = 1;
+#1 preim = 0;
+inp = 8'b01011011;
+#20 priem = 1;
+#1 preim = 0;
+inp = 8'd00110011;
+#20 priem = 1;
+#1 preim = 0;
+inp = 8'b01111110;
+#20 priem = 1;
+#1 preim = 0;
+inp = 8'b11111111;
+#20 priem = 1;
+#1 preim = 0;
+inp 8'd0;
+end
+
+always #1 clk = !clk;
+
+initial #300 $stop;
+
+
+endmodule

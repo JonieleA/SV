@@ -1,0 +1,115 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/k-105-03/workspace/29nov/lfsr_task_for_5/simulation/modelsim
+vlfsr_fibonacci_param
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1701255077
+!i10b 1
+!s100 3]hzcfj7F5zi>?DI9CS[V0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1H<A?NW4YKkX@gh4[UDjM2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1700689350
+8/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/lfsr_fibonacci_param.sv
+F/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/lfsr_fibonacci_param.sv
+!i122 0
+L0 1 22
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1701255076.000000
+!s107 /home/k-105-03/workspace/29nov/lfsr_task_for_5/src/lfsr_fibonacci_param.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/lfsr_task_for_5/src|/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/lfsr_fibonacci_param.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+/home/k-105-03/workspace/29nov/lfsr_task_for_5/src
+Z8 tCvgOpt 0
+vmux_2to1
+R1
+R2
+!i10b 1
+!s100 D2gmdnLnPZo0XTdOX36Wj1
+R3
+Ic>SfhMjgbKAE;Vh3e:2]Z1
+R4
+S1
+R0
+w1700739466
+8/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/mux_2to1.sv
+F/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/mux_2to1.sv
+!i122 1
+L0 1 13
+R5
+r1
+!s85 0
+31
+Z9 !s108 1701255077.000000
+!s107 /home/k-105-03/workspace/29nov/lfsr_task_for_5/src/mux_2to1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/lfsr_task_for_5/src|/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/mux_2to1.sv|
+!i113 1
+R6
+R7
+R8
+vtb_fibonacci_5
+R1
+R2
+!i10b 1
+!s100 IzMozi<B7o?4iSXCj2>MN0
+R3
+I;?h6oda]6f^KZ9JgKRlL13
+R4
+S1
+R0
+w1700689694
+8/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/tb_fibonacci_5.sv
+F/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/tb_fibonacci_5.sv
+!i122 3
+L0 3 34
+R5
+r1
+!s85 0
+31
+R9
+!s107 /home/k-105-03/workspace/29nov/lfsr_task_for_5/src/tb_fibonacci_5.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/lfsr_task_for_5/src|/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/tb_fibonacci_5.sv|
+!i113 1
+R6
+R7
+R8
+vtop_lfsr_5
+R1
+R2
+!i10b 1
+!s100 2C>h[YEYecShc1FPWeFYL1
+R3
+IlY0[9YkSN;H[O_ICR<5ce1
+R4
+S1
+R0
+w1700689738
+8/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/top_lfsr_5.sv
+F/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/top_lfsr_5.sv
+!i122 2
+L0 1 14
+R5
+r1
+!s85 0
+31
+R9
+!s107 /home/k-105-03/workspace/29nov/lfsr_task_for_5/src/top_lfsr_5.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/k-105-03/workspace/29nov/lfsr_task_for_5/src|/home/k-105-03/workspace/29nov/lfsr_task_for_5/src/top_lfsr_5.sv|
+!i113 1
+R6
+R7
+R8

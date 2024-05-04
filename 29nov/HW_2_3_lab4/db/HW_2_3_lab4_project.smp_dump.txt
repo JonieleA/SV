@@ -1,0 +1,34 @@
+
+State Machine - |top_entire|top_perek:dutPeperek|mealy_perek:U2|state
+Name state.DIG3 state.DIG2 state.DIG1 state.START state.DIG4 
+state.START 0 0 0 0 0 
+state.DIG1 0 0 1 1 0 
+state.DIG2 0 1 0 1 0 
+state.DIG3 1 0 0 1 0 
+state.DIG4 0 0 0 1 1 
+
+State Machine - |top_entire|top_perek:dutPeperek|moore_perek:U1|state
+Name state.EN state.DIG4 state.DIG3 state.DIG2 state.DIG1 state.START 
+state.START 0 0 0 0 0 0 
+state.DIG1 0 0 0 0 1 1 
+state.DIG2 0 0 0 1 0 1 
+state.DIG3 0 0 1 0 0 1 
+state.DIG4 0 1 0 0 0 1 
+state.EN 1 0 0 0 0 1 
+
+State Machine - |top_entire|top_neperek:dutNeperek|mealy_neperek:U2|state
+Name state.DIG3 state.DIG2 state.DIG1 state.START state.DIG4 
+state.START 0 0 0 0 0 
+state.DIG1 0 0 1 1 0 
+state.DIG2 0 1 0 1 0 
+state.DIG3 1 0 0 1 0 
+state.DIG4 0 0 0 1 1 
+
+State Machine - |top_entire|top_neperek:dutNeperek|moore_neperek:U1|state
+Name state.EN state.DIGIT_4 state.DIGIT_3 state.DIGIT_2 state.DIGIT_1 state.START 
+state.START 0 0 0 0 0 0 
+state.DIGIT_1 0 0 0 0 1 1 
+state.DIGIT_2 0 0 0 1 0 1 
+state.DIGIT_3 0 0 1 0 0 1 
+state.DIGIT_4 0 1 0 0 0 1 
+state.EN 1 0 0 0 0 1 

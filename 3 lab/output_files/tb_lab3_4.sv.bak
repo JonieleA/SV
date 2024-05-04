@@ -1,0 +1,29 @@
+
+`timescale 1ns/1ns
+
+module tb_lab3_4;
+
+
+logic clk, _rst, last_clk, shift_l, shift_r;
+logic [14:0] Q,D;
+
+
+reg_cir_par DUT (.D(D), .clk(clk), ._rst(_rst), .Q(Q), .shift_l(shift_l), .shift_r(shift_r));
+
+initial begin
+D =15'b011011011101111;
+_rst = 0;
+#10 _rst = 1'b1;
+
+
+end
+
+initial
+#1500 $stop;
+
+initial begin
+$display("Start");
+$monitor($time, "clk = %b and _rst = %b, last_clk = %b, Q = %b", clk, _rst, last_clk, Q);
+end
+
+endmodule

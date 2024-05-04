@@ -1,0 +1,9 @@
+module top_perek (clk, nres, INP, OUT_MOORE, OUT_MEALY);
+
+input logic clk, nres, INP;
+output logic OUT_MOORE, OUT_MEALY;
+
+moore_overlapped U1 (clk, res_n, D, F0);
+mealy_overlapped U2 (clk, res_n, D, F1);
+
+endmodule

@@ -1,0 +1,10 @@
+module top_lfsr_5 (clkTop, nrstTop, MUX_out);
+
+input logic  clkTop;
+input logic nrstTop;
+output logic MUX_out;
+
+logic somewire1, somewire2, somewire3;
+
+
+endmodule

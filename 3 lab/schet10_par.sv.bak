@@ -1,0 +1,20 @@
+module schet10_par #(parameter Schet = 10) (clk, _rst, n_clk, Q);
+
+input logic clk, _rst;
+output logic [3:0] Q;
+output logic n_clk;
+
+always_ff @(posedge clk, negedge _rst) begin
+if (!_rst) Q <= 0;
+else if (Q != 10) Q <= Q+1;
+else Q <= 0;
+end
+
+always_comb begin
+case ( Q )
+	Schet : n_clk = 1'b1;
+	default : n_clk = 1'b0;
+endcase
+end
+
+endmodule

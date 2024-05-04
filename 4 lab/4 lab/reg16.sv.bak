@@ -1,0 +1,10 @@
+module reg16(clk, _rst, D, Q, btn1, btn2, btn3, btn4, btn5, btn6);
+
+input logic clk, _rst, btn1, btn2, btn3, btn4, btn5, btn6;
+output logic [15:0] Q;
+input logic [15:0] D;
+
+enum logic {nothing=1'b000, in, out_par, out_pos, shift_left, shift_right, circle_shift_left,circle_shift_right} state;
+
+
+

@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "OUTP_MOORE_NEPEREK",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP_MEALY_NEPEREK",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP_MOORE_PEREK",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP_MEALY_PEREK",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "nres",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

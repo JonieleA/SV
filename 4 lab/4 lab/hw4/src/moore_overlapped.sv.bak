@@ -1,0 +1,4 @@
+module moore_overlapped (clk, res, DATA_in, DATA_out);
+
+input logic clk, res_n;
+input logic DATA_in;

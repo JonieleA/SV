@@ -1,0 +1,3 @@
+module HighestGenTop (clk, nres, OUTP_MOORE_NEPEREK, OUTP_MEALY_NEPEREK);
+
+endmodule

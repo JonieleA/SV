@@ -1,0 +1,11 @@
+module universal_shift_reg(clk, res_n, set, D, N, Q);
+
+input logic clk, res_n;
+input logic set, D;
+output logic
+
+logic data;
+
+
+
+endmodule

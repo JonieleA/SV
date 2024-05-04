@@ -1,0 +1,13 @@
+module delay_par #(parameter delay) (clk, priem, del);
+
+input logic clk, priem;
+output logic del;
+
+logic Q[2:0];
+
+always_ff @(posedge clk, posedge priem)
+	if (Q[2:0] == delay && priem) Q <= 0;
+	else if (Q[2:0] < delay) Q <= Q + 1;
+	else Q <= Q;
+	
+assign del = (Q[2:0] == delay) ? 1 : 0;
